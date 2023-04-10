@@ -51,23 +51,23 @@ li {
 
 .header__container {
     display: flex;
-    margin: 12px auto 0px auto;
+    margin: 0.75em auto 0px auto;
     justify-content: space-between;
-    max-width: 1080px;
-    height: 70px;
+    max-width: 67.5em;
+    max-height: 4.3em;
     background-color: #FAFAFA;
 }
 
 
 .menu__list {
     display: flex;
-    margin: 22px 0 23px 0;
+    margin: 1.37em 0 1.43em 0;
 }
 
 .menu__link {
-    margin: 0 0 0 34px;
-    font-size: 14px;
-    line-height: 24px;
+    margin: 0 0 0 2.4em;
+    font-size: 0.87rem;
+    line-height: 1.5rem;
     color: #0A0A0A;
     transition: 0.2s;
 }
@@ -82,14 +82,14 @@ li {
 }
 
 .signup__btn {
-    margin: 12px 16px 28px 0;
-    width: 116px;
-    height: 46px;
+    margin: 0.75em 1.4em 1.75em 0;
+    width: 7.25rem;
+    height: 2.8rem;
     background-color: #0A0A0A;
     border-radius: 32px;
     color: #FAF9F7;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 0.75rem;
+    line-height: 0.87rem;
     text-transform: uppercase;
     transition: 0.3s;
     cursor: pointer;
@@ -108,41 +108,41 @@ li {
 }
 
 .scale__coffee__img {
-    margin: 138px 48px 102px 176px;
+    margin: 8.6em 3rem 6.3em 11em;
 }
 
 .scale__talking__img {
-    margin: 78px 0 0 0;
+    margin: 4.8em 0 0 0;
 }
 
 .scale__title {
-    margin: 0 auto 55px auto;
-    padding: 0 16px 0 0;
+    margin: 0 auto 0.4em auto;
+    padding: 0 0.12em 0 0;
     text-align: center;
     font-family: 'Roboto';
-    font-size: 142px;
+    font-size: 9rem;
     font-weight: normal;
-    line-height: 160px;
+    line-height: 10rem;
     color: #0A0A0A;
 }
 
 .scale__subtitle {
-    margin: 0 0 45px 60px;
-    max-width: 453px;
-    font-size: 18px;
-    line-height: 27px;
+    margin: 0 0 2.5em 3.3em;
+    max-width: 25em;
+    font-size: 1.12rem;
+    line-height: 1.5em;
     color: #0A0A0A;
 }
 
 .scale__btn {
-    margin: 0 0 136px 60px;
-    width: 180px;
-    height: 46px;
+    margin: 0 0 11.5em 5em;
+    width: 14.8em;
+    height: 3.7em;
     background-color: #C6F572;
     border-radius: 40px;
     color: #0A0A0A;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 0.75rem;
+    line-height: 0.8rem;
     text-transform: uppercase;
     transition: 0.3s;
     cursor: pointer;
@@ -161,22 +161,21 @@ li {
 
 .growing__title {
     margin-top: 0 auto;
-    padding: 119px 0 33px 0;
+    padding: 3.9em 0 1.1em 0;
     text-align: center;
     font-family: 'Roboto';
     font-weight: normal;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 1.87rem;
+    line-height: 2.5rem;
     color: #FAF9F7;
 }
 
 .growing__author {
     margin: 0 auto;
-    padding-bottom: 95px;
+    padding-bottom: 8.63em;
     text-align: center;
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: normal;
+    font-size: 0.68rem;
+    line-height: 1rem;
     color: #504F4F;
 }
 
@@ -185,7 +184,7 @@ li {
 
 .answers__container {
     display: flex;
-    height: 800px;
+    max-height: 50rem;
 }
 
 .comment__img {
