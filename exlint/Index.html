@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exlint</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header stars">
+            <div class="header__container _container">
+                <div class="header__logo__img">
+                    <a href="#">
+                        <img src="./assets/img/png/logo.png" alt="logo image">
+                    </a>
+                </div>
+                <div class="header__links">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Documentations</a>
+                        </li>
+
+                        <li class="header__item">
+                            <img src="./assets/img/png/git.png" alt="git image" class="item__img">
+                            <a href="" class="header__link no__doc">GitHub Project</a>
+                        </li>
+
+                        <li class="header__item">
+                            <img src="./assets/img/png/discord.png" alt="discord image" class="item__img">
+                            <a href="" class="header__link no__doc">Discord Community</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__buttons">
+                    <button class="button__login" type="button">Log in</button>
+                    <button class="button__start" type="button">Get Started</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="quick__start stars">
+            <div class="quick__start__container _container">
+                <h1 class="main__title">
+                    Empower Best Practices
+                    <span class="title__purple">Hassle Free, In No Time.</span>
+                </h1>
+                <div class="quick__start__input">
+                    <span class="start__install">
+                  npm install --global @exlint.io/cli
+               </span>
+                    <img src="./assets/img/svg/copy.svg" alt="copy button">
+                </div>
+                <div class="quick__start__button">
+                    <button class="quick__button" type="button">
+                  Quick Start
+               </button>
+                    <p class="quick__button__subtitle">
+                        Keep your projects clean with Exlint.
+                    </p>
+                </div>
+                <div class="quick__start__output">
+                    <p class="output__text">
+                        - Lorem ipsum dolor sit amet, consectetur<br>[v] adipiscing elit, sed do eiusmod tempor<br>[v] incididunt ut labore et dolore magna<br>aliqua.<br><br> - Ut enim ad minim veniam, quis nostrud<br>exercitation ullamco laboris nisi
+                        ut aliquip<br><span>ex ea commodo consequat.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="goodbye">
+            <div class="goodbye__container _container">
+                <h2 class="goodbye__title">
+                    Say goodbye to messy multi-repo coding conventions.
+                </h2>
+                <div class="goodbye__ruleblock">
+                    <div class="imgline"><img src="./assets/img/png/suit.png" alt="suit picture"></div>
+                    <img src="./assets/img/png/lint.png" alt="lint picture">
+                    <img src="./assets/img/png/cd.png" alt="cd picture">
+                    <img src="./assets/img/png/depcheck.png" alt="depcheck picture">
+                    <div class="ruleblock__firstange"></div>
+                    <div class="ruleblock__rectange">
+                        <p class="rectangle__title">
+                            Rule Added:
+                        </p>
+                        <p class="rectangle__subtitle">
+                            'color-named': ['<span class="rectangle__purple">never</span>']
+                        </p>
+                    </div>
+                </div>
+                <div class="goodbye__vline">
+                    <img src="./assets/img/png/ruleline.png" alt="vertical line">
+                </div>
+                <div class="goodbye__exlint">
+                    <p class="exlint__text">$ exlint run</p>
+                </div>
+                <div class="goodbye__hvline">
+                    <img src="./assets/img/png/ruleline_2.png" alt="horizontal-vertical line">
+                </div>
+                <div class="goodbye__shells">
+                    <div class="shell__input">
+                        <p class="shell_input__text">
+                            <span class="input__codenum">1</span> body { <br>
+                            <span class="input__codenum">2</span>  <span class="codeprop">background-color:</span> <span class="input__valuecolor">black;</span><br>
+                            <span class="input__codenum">3</span>  } <br>
+                            <span class="input__codenum">4</span> <br>
+                            <span class="input__codenum">5</span>  h1 {<br>
+                            <span class="input__codenum">6</span>      <span class="codeprop">font-size:</span> 22px; <br>
+                            <span class="input__codenum">7</span>       <span class="codeprop">color:</span> <span class="input__hexcolor">#ff0000;</span> <br>
+                            <span class="input__codenum">8</span>  } <br>
+                            <span class="input__codenum">9</span> <br>
+                            <span class="input__decimal">10</span> <span class="input__classname__color">.siteHeader</span> { <br>
+                            <span class="input__decimal">11</span>     <span class="codeprop">font-size:</span> 50px; <br>
+                            <span class="input__decimal">12</span>     <span class="codeprop">color:</span> <span class="input__valuecolor">white;</span> <br>
+                            <span class="input__decimal">13</span>     <span class="codeprop">color:</span> <span class="input__valuecolor">black;</span> <br>
+                            <span class="input__decimal">14</span> } <br>
+                        </p>
+                    </div>
+                    <div class="shell__line">
+                        <img src="./assets/img/png/shell_line.png" alt="little horizontal line">
+                    </div>
+                    <div class="shell__output">
+                        <p class="shell__output__text">
+                            --- Stylelint output --- format.css 2:20 ✖ Unexpected named color "black" color-named 12:9 ✖ Unexpected named color "white" color-named 13:9 ✖ Unexpected named color "black" color-named 4 problems (4 errors, 0 warnings)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
