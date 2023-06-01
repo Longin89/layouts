@@ -1,23 +1,23 @@
 /*ADDED FONTS*/
 @font-face {
   font-family: "Plex-Mono";
-  src: url(/assets/fonts/IBMPlexMono-Regular.woff2);
+  src: url(../assets/fonts/IBMPlexMono-Regular.woff2);
 }
 @font-face {
   font-family: "Poppins-Bold";
-  src: url(/assets/fonts/Poppins-Bold.woff2);
+  src: url(../assets/fonts/Poppins-Bold.woff2);
 }
 @font-face {
   font-family: "Poppins-SemiBold";
-  src: url(/assets/fonts/Poppins-SemiBold.woff2);
+  src: url(../assets/fonts/Poppins-SemiBold.woff2);
 }
 @font-face {
   font-family: "Poppins-Medium";
-  src: url(/assets/fonts/Poppins-Medium.woff2);
+  src: url(../assets/fonts/Poppins-Medium.woff2);
 }
 @font-face {
   font-family: "Poppins-Regular";
-  src: url(/assets/fonts/Poppins-Regular.woff2);
+  src: url(../assets/fonts/Poppins-Regular.woff2);
 }
 /*BASIC ELEMENTS STYLE*/
 * {
@@ -68,7 +68,7 @@ li {
 }
 
 .stars {
-  background: url(/assets/img/jpg/stars_bg.jpg);
+  background: url(../assets/img/jpg/stars_bg.jpg);
 }
 
 /*HEADER*/
@@ -304,7 +304,7 @@ li {
 
 .goodbye {
   background: #232234;
-  background-image: url(/assets/img/png/vector.png);
+  background-image: url(../assets/img/png/vector.png);
   background-position: 50% 10%;
   background-repeat: no-repeat;
 }
