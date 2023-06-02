@@ -105,18 +105,18 @@
                     <div class="shell__input">
                         <p class="shell_input__text">
                             <span class="input__codenum">1</span> body { <br>
-                            <span class="input__codenum">2</span>  <span class="codeprop">background-color:</span> <span class="input__valuecolor">black;</span><br>
-                            <span class="input__codenum">3</span>  } <br>
+                            <span class="input__codenum">2</span> <span class="codeprop">background-color:</span> <span class="input__valuecolor">black;</span><br>
+                            <span class="input__codenum">3</span> } <br>
                             <span class="input__codenum">4</span> <br>
-                            <span class="input__codenum">5</span>  h1 {<br>
-                            <span class="input__codenum">6</span>      <span class="codeprop">font-size:</span> 22px; <br>
-                            <span class="input__codenum">7</span>       <span class="codeprop">color:</span> <span class="input__hexcolor">#ff0000;</span> <br>
-                            <span class="input__codenum">8</span>  } <br>
+                            <span class="input__codenum">5</span> h1 {<br>
+                            <span class="input__codenum">6</span> <span class="codeprop">font-size:</span> 22px; <br>
+                            <span class="input__codenum">7</span> <span class="codeprop">color:</span> <span class="input__hexcolor">#ff0000;</span> <br>
+                            <span class="input__codenum">8</span> } <br>
                             <span class="input__codenum">9</span> <br>
                             <span class="input__decimal">10</span> <span class="input__classname__color">.siteHeader</span> { <br>
-                            <span class="input__decimal">11</span>     <span class="codeprop">font-size:</span> 50px; <br>
-                            <span class="input__decimal">12</span>     <span class="codeprop">color:</span> <span class="input__valuecolor">white;</span> <br>
-                            <span class="input__decimal">13</span>     <span class="codeprop">color:</span> <span class="input__valuecolor">black;</span> <br>
+                            <span class="input__decimal">11</span> <span class="codeprop">font-size:</span> 50px; <br>
+                            <span class="input__decimal">12</span> <span class="codeprop">color:</span> <span class="input__valuecolor">white;</span> <br>
+                            <span class="input__decimal">13</span> <span class="codeprop">color:</span> <span class="input__valuecolor">black;</span> <br>
                             <span class="input__decimal">14</span> } <br>
                         </p>
                     </div>
@@ -124,25 +124,34 @@
                         <img src="./assets/img/png/shell_line.png" alt="little horizontal line">
                     </div>
                     <div class="shell__output">
-                        <p class="shell__output__text">
-                            --- Stylelint output --- <br>
-                             format.css <br>
-                             <span class="output__line">2:20 ✖</span>
-                             <span class="output__log">Unexpected named color "black"</span>
-                                                    color-named<br>
-                                                    <span class="output__line"> 12:9 ✖</span>
-                                                    <span class="output__log">Unexpected named color "white"</span>
-                                                    <span class="output__line">color-named</span><br>
-                                                    <span class="output__line">13:9 ✖</span>
-                                                    <span class="output log">Unexpected named color "black"</span><br>
-                                                    <span class="output__line"> color-named</span><br>
-                                                    <span class="output__log">4 problems (4 errors, 0 warnings)</span>
-                        </p>
+                        <div class="shell__output__text">
+                            <span class="output__stylelint">--- Stylelint output ---</span>
+                            <br>
+                            <span class="output__css">format.css</span>
+                            <br>
+
+                            <span class="output__line">2:20</span>✖
+                            <span class="output__log">Unexpected named color "black"</span>
+                            <span class="output__named">color-named</span>
+                            <br>
+
+                            <span class="output__line">12:9</span>✖
+                            <span class="output__log">Unexpected named color "white"</span>
+                            <span class="output__named">color-named</span>
+                            <br>
+
+                            <span class="output__line">13:9</span>✖
+                            <span class="output__log">Unexpected named color "black"</span>
+                            <span class="output__named">color-named</span>
+                            <br>
+
+                            <span class="output__problem">4 problems (4 errors, 0 warnings)</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
-    </div>
+        </div>
 </body>
 
 </html>

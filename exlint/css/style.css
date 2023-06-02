@@ -110,6 +110,10 @@ li {
   margin-right: 0;
 }
 
+.header__link {
+  color: #DCDAE7;
+}
+
 .header__link:visited {
   color: var(--links_color);
 }
@@ -565,4 +569,39 @@ li {
   font-size: 18px;
   line-height: 23px;
   color: #FF5B5B;
+}
+
+.output__stylelint {
+  display: inline-block;
+  margin: 15px 0 0 15px;
+}
+
+.output__css {
+  display: inline-block;
+  margin: 20px 0 0 15px;
+  color: #E7E7E7;
+}
+
+.output__line {
+  display: inline-block;
+  margin: 0 30px 0 25px;
+  color: #9B9B9B;
+}
+
+.output__log {
+  display: inline-block;
+  margin: 0 10px 0 15px;
+  color: #E7E7E7;
+}
+
+.output__named {
+  display: inline-block;
+  margin: 0 30px 0 15px;
+  color: #9B9B9B;
+}
+
+.output__problem {
+  display: inline-block;
+  margin: 24px 0 0 15px;
+  color: #E7E7E7;
 }
