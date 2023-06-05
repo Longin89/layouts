@@ -151,7 +151,7 @@
             color: #010201;
             transition: .5s;
         }
-        /*Main title + quick start section*/
+        /*MAIN TITLE + QUICK START SECTION*/
         
         .main__title {
             margin: .8em auto .8em auto;
@@ -177,12 +177,12 @@
             justify-content: space-between;
             align-items: center;
             margin: 0 auto 2.5em auto;
-            padding: 16px 30px;
-            max-width: 585px;
+            padding: .8em 1.5em;
+            max-width: 29em;
             color: #E7E7E7;
             font-family: 'Plex-Mono';
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 1.25rem;
+            line-height: 1.3em;
             background: rgba(34, 34, 34, 0.05);
             border: 2.5px solid #7A4DF3;
             box-shadow: 0px 1px 37px rgba(151, 71, 255, 0.7);
@@ -210,9 +210,9 @@
             justify-content: center;
             align-items: center;
             margin: 0 1.1em 0 0;
-            padding: 25px;
-            width: 154px;
-            height: 51px;
+            padding: 1.56em;
+            width: 9.62em;
+            height: 3.18em;
             cursor: pointer;
             background: #7A4DF3;
             color: #FEFEFE;
@@ -229,20 +229,18 @@
         .quick__button__subtitle {
             display: flex;
             align-items: center;
-            text-align: center;
             font-family: 'Poppins-Regular';
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 1.25rem;
+            line-height: 1.3em;
             color: #DCDAE7;
         }
         
         .quick__start__output {
             display: flex;
             margin: 0 auto;
-            padding: 20px;
-            max-width: 820px;
-            min-height: 473px;
+            padding: 1.25em;
+            max-width: 51em;
+            min-height: 29.5em;
             background: #242337;
             border: 2.5px solid #7A4DF3;
             border-radius: 5px;
@@ -250,8 +248,8 @@
         
         .output__text {
             font-family: 'Plex-Mono';
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 1.25rem;
+            line-height: 1.3em;
             color: #E7E7E7;
             span {
                 color: #F21212;
@@ -266,12 +264,12 @@
         }
         
         .goodbye__title {
-            max-width: 700px;
-            margin: 92px auto 64px auto;
+            max-width: 19em;
+            margin: 2.55em auto 1.77em auto;
             text-align: center;
             font-family: 'Poppins-Bold';
-            font-size: 36px;
-            line-height: 47px;
+            font-size: 2.25rem;
+            line-height: 1.3em;
             background: linear-gradient(270deg, #9747FF 26.96%, #FCFCFC 93.64%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -282,22 +280,22 @@
             position: relative;
             display: flex;
             align-items: center;
-            padding: 35px;
-            gap: 10px;
+            padding: 2.3em;
+            gap: .62em;
             margin: 0 auto;
-            max-width: 780px;
-            min-height: 210px;
+            max-width: 48.8em;
+            min-height: 13.2em;
             background: rgba(0, 0, 0, 0.15);
             border: 2.5px solid rgba(83, 58, 185, 0.5);
             backdrop-filter: blur(2.5px);
             border-radius: 30px;
             img {
-                margin-left: 10px;
+                margin-left: .62em;
             }
         }
         
         .imgline {
-            padding-top: 10px;
+            padding-top: .62em;
             position: relative;
             cursor: pointer;
         }
@@ -306,9 +304,9 @@
             content: "";
             display: block;
             position: absolute;
-            left: 10px;
+            left: .62em;
             width: 0;
-            top: 102px;
+            top: 6.4em;
             height: 5px;
             background-color: #7A4DF3;
             border-radius: 10px;
@@ -318,16 +316,16 @@
         .imgline:hover:after,
         .imgline:active:after {
             margin: 0 auto;
-            width: 64px;
+            width: 4em;
         }
         
         .ruleblock__firstange {
             position: absolute;
-            right: 92px;
-            top: 35px;
+            right: 5.75em;
+            top: 2.18em;
             border: 1px solid #7A4DF3;
-            width: 320px;
-            height: 210px;
+            width: 20em;
+            height: 13.75em;
             z-index: 1;
             background: #1E1D30;
             box-shadow: 0px 1px 11px rgba(122, 77, 243, 0.8);
@@ -336,14 +334,14 @@
         
         .ruleblock__rectange {
             position: absolute;
-            top: 78px;
-            right: 56px;
-            margin-bottom: 85px;
+            top: 4.87em;
+            right: 3.5em;
+            margin-bottom: 5.31em;
             display: flex;
             flex-direction: column;
-            padding: 33px 24px;
-            gap: 10px;
-            width: 340px;
+            padding: 2.06em 1.5em;
+            gap: .62em;
+            width: 21.25em;
             background: #242337;
             border: 5px solid #7A4DF3;
             box-shadow: 0px 1px 11px rgba(122, 77, 243, 0.8);
@@ -353,15 +351,15 @@
         
         .rectangle__title {
             font-family: 'Plex-Mono';
-            font-size: 18px;
-            line-height: 23px;
+            font-size: 1.12rem;
+            line-height: 1.27em;
             color: #9B9B9B;
         }
         
         .rectangle__subtitle {
             font-family: 'Plex-Mono';
-            font-size: 18px;
-            line-height: 23px;
+            font-size: 1.12rem;
+            line-height: 1.27em;
             color: #E7E7E7;
             span {
                 color: #CD7BFF;
@@ -377,19 +375,19 @@
             display: flex;
             justify-content: center;
             margin: 0 auto;
-            width: 320px;
-            height: 60px;
+            width: 20em;
+            height: 3.75em;
         }
         
         .exlint__text {
             display: flex;
             align-items: center;
-            margin-right: 10px;
-            padding: 17px 76px;
+            margin-right: .47em;
+            padding: .8em 3.6em;
             font-family: 'Plex-Mono';
             color: #FEFEFE;
-            font-size: 21px;
-            line-height: 27px;
+            font-size: 1.31rem;
+            line-height: 1.28em;
             background: #202428;
             border: 2.5px solid #DC6794;
             box-shadow: 0px -2px 28px rgba(151, 71, 255, 0.3);
@@ -399,7 +397,7 @@
         .goodbye__hvline {
             display: flex;
             justify-content: space-around;
-            margin-right: 320px;
+            margin-right: 20em;
         }
         
         .goodbye__shells {
@@ -408,8 +406,8 @@
         }
         
         .shell__input {
-            width: 540px;
-            height: 362px;
+            width: 33.75em;
+            height: 22.62em;
             background: #242337;
             border: 2.5px solid #7A4DF3;
             box-shadow: 0px 0px 43px rgba(151, 71, 255, 0.5);
@@ -418,27 +416,23 @@
         
         .shell_input__text {
             font-family: 'Plex-Mono';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 23px;
+            font-size: 1.12rem;
+            line-height: 1.2em;
             color: #FF5B5B;
-            padding: 15px 0 0 20px;
-            gap: 20px;
+            padding: .7em 0 0 1.1em;
+            gap: 1.1em;
         }
         
         .input__codenum {
-            margin: 0 10px 0 15px;
+            margin: 0 .55em 0 .83em;
             font-family: 'Plex-Mono';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 23px;
+            font-size: 1.12rem;
+            line-height: 1.3em;
             color: #9B9B9B;
         }
         
         .codeprop {
-            margin-left: 42px;
+            margin-left: 2.35em;
             color: #8C98FF;
         }
         
@@ -447,7 +441,7 @@
         }
         
         .input__decimal {
-            margin: 0 10px 0 5px;
+            margin: 0 .7em 0 .31em;
             color: #9B9B9B;
         }
         
@@ -465,8 +459,8 @@
         
         .shell__output {
             align-self: center;
-            width: 540px;
-            height: 293px;
+            width: 33.75em;
+            height: 18.31em;
             background: #242337;
             border: 2.5px solid #7A4DF3;
             box-shadow: 0px 0px 43px rgba(151, 71, 255, 0.5);
@@ -474,46 +468,44 @@
         }
         
         .shell__output__text {
-            max-width: 500px;
+            max-width: 27em;
             font-family: 'Plex-Mono';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 23px;
+            font-size: 1.12rem;
+            line-height: 1.27em;
             color: #FF5B5B;
         }
         
         .output__stylelint {
             display: inline-block;
-            margin: 15px 0 0 15px;
+            margin: .83em 0 0 .83em;
         }
         
         .output__css {
             display: inline-block;
-            margin: 20px 0 0 15px;
+            margin: 1.38em 0 0 .83em;
             color: #E7E7E7;
         }
         
         .output__line {
             display: inline-block;
-            margin: 0 30px 0 25px;
+            margin: 0 1.71em 0 1.38em;
             color: #9B9B9B;
         }
         
         .output__log {
             display: inline-block;
-            margin: 0 10px 0 15px;
+            margin: 0 .55em 0 .83em;
             color: #E7E7E7;
         }
         
         .output__named {
             display: inline-block;
-            margin: 0 30px 0 15px;
+            margin: 0 1.66em 0 .83em;
             color: #9B9B9B;
         }
         
         .output__problem {
             display: inline-block;
-            margin: 24px 0 0 15px;
+            margin: 1.33em 0 0 .83em;
             color: #E7E7E7;
         }
