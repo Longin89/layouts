@@ -307,7 +307,8 @@ li {
 .goodbye {
   background: #232234;
   background-image: url(../assets/img/png/vector.png);
-  background-position: 50% 10%;
+  background-position: 65% 5%;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 
@@ -492,8 +493,8 @@ li {
   height: 22.62em;
   background: #242337;
   border: 2.5px solid #7A4DF3;
-  -webkit-box-shadow: 0px 0px 43px rgba(151, 71, 255, 0.5);
-          box-shadow: 0px 0px 43px rgba(151, 71, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 13px rgba(151, 71, 255, 0.5);
+          box-shadow: 0px 0px 13px rgba(151, 71, 255, 0.5);
   border-radius: 5px;
 }
 
@@ -550,8 +551,8 @@ li {
   height: 18.31em;
   background: #242337;
   border: 2.5px solid #7A4DF3;
-  -webkit-box-shadow: 0px 0px 43px rgba(151, 71, 255, 0.5);
-          box-shadow: 0px 0px 43px rgba(151, 71, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 13px rgba(151, 71, 255, 0.5);
+          box-shadow: 0px 0px 13px rgba(151, 71, 255, 0.5);
   border-radius: 5px;
 }
 
@@ -596,4 +597,23 @@ li {
   display: inline-block;
   margin: 1.33em 0 0 0.83em;
   color: #E7E7E7;
+}
+
+/*CONVENTIONS SECTION*/
+.conventions {
+  background: #232234;
+}
+
+.conventions__title {
+  margin-top: 185px;
+  font-family: "Poppins-Bold";
+  font-size: 45px;
+  line-height: 59px;
+  text-align: center;
+  background: -webkit-gradient(linear, right top, left top, color-stop(26.96%, #9747FF), color-stop(93.64%, #FCFCFC));
+  background: linear-gradient(270deg, #9747FF 26.96%, #FCFCFC 93.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
