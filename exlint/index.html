@@ -160,58 +160,59 @@
                 <h3 class="conventions__subtitle">
                     Never compromise on custom compliance configurations again
                 </h3>
-                <div class="conventions__output">
-                    <span class="output__stylelint">--- Stylelint output ---</span>
-                    <span class="output__css">format.css</span>
-
-                    <span class="output__line">2:20</span>✖
-                    <span class="output__log">Unexpected named color "black"</span>
-                    <span class="output__named">color-named</span>
-                    <br>
-
-                    <span class="output__line">12:9</span>✖
-                    <span class="output__log">Unexpected named color "black"</span>
-                    <span class="output__named">color-named</span>
-                    <br>
-
-                    <span class="output__line">13:9</span>✖
-                    <span class="output__log">Unexpected named color "black"</span>
-                    <span class="output__named">color-named</span>
-                    <br>
-
-                    <span class="output__problem">4 problems (4 errors, 0 warnings)</span>
-                    <span class="output__stylelint">--- ESLint output ---</span>
-                    <br>
-
-                    <span class="stylelint__path">
-                        /Users/talrofe/Exlint/test-cli/date.js
+                <div class="conventions__inout _container">
+                    <div class="conventions__output">
+                        <span class="output__styleconv">--- Stylelint output ---</span>
                         <br>
-                        6:1 <span class="input__hexcolor">error</span> Expected indentation of 0 tabs but found 1 <span class="output__line">indent</span>
-                    </span>
+                        <span class="output__cssconv">format.css</span>
+                        <span class="output__lineconv">2:20</span><span class="greycross">✖</span>
+                        <span class="output__logconv">Unexpected named color "black"</span>
+                        <span class="output__namedconv">color-named</span>
+                        <br>
 
-                    <span class="output__stylelint">--- Prettier output ---</span>
-                    <br>
+                        <span class="output__lineconv">12:9</span><span class="greycross">✖</span>
+                        <span class="output__logconv">Unexpected named color "white"</span>
+                        <span class="output__namedconv">color-named</span>
+                        <br>
 
-                    <span class="stylelint__path">
-                        Checking formatting...
-                    </span>
+                        <span class="output__lineconv">13:9</span><span class="greycross">✖</span>
+                        <span class="output__logconv">Unexpected named color "black"</span>
+                        <span class="output__namedconv">color-named</span>
+                        <br>
+
+                        <span class="output__problemconv">4 problems (4 errors, 0 warnings)</span>
+                        <br>
+                        <span class="output__stylelintconv">--- ESLint output ---</span>
+                        <br>
+                        <span class="stylelint__path">
+                            /Users/talrofe/Exlint/test-cli/date.js
+                            <br>
+                           <span class="output__line errorconv">  6:1</span>
+                             <span class="input__hexcolor hexconv">error</span> Expected indentation of 0 tabs but found 1
+                             <span class="output__line convline">indent</span>
+                        </span>
+                        <span class="output__stylelintconv">--- Prettier output ---</span>
+                        <span class="stylelint__path">
+                            Checking formatting...
+                        </span>
+                    </div>
+
+                    <div class="conventions__advantages">
+                        <p class="advantages__staff">
+                            Tech Leads / Team Managers
+                        </p>
+                        <h3 class="advantages__title">
+                            Enable best practices in teams with easy compliance sharing
+                        </h3>
+                        <ul class="advantages__list">
+                            <li class="advantages__item">Simple setup</li>
+                            <li class="advantages__item">Iterate on conventions easily</li>
+                            <li class="advantages__item">Quick appliance in multiple repositories</li>
+                            <li class="advantages__item">Total privacy - code is analyzed locally</li>
+                            <li class="advantages__item">History, analytics, permissions - Coming soon</li> 
+                        </ul>
+                    </div>
                 </div>
-                <div class="conventions__advantages">
-                    <p class="advantages__staff">
-                        Tech Leads / Team Managers
-                    </p>
-                    <h3 class="advantages__title">
-                        Enable best practices in teams with easy compliance sharing
-                    </h3>
-                    <ul class="advantages__list">
-                        <li class="advantages__item">Simple setup</li>
-                        <li class="advantages__item">Iterate on conventions easily</li>
-                        <li class="advantages__item">Quick appliance in multiple repositories</li>
-                        <li class="advantages__item">Total privacy - code is analyzed locally</li>
-                        <li class="advantages__item">History, analytics, permissions - Coming soon</li> 
-                    </ul>
-                </div>
-
                 <div class="conventions__developers">
                     <p class="developers__title">
                         Developers
@@ -236,7 +237,6 @@
                         <img src="../exlint/assets/img/jpg/policies.jpg" alt="policies">
                     </div>
                 </div>
-
             </div>
         </section>
         </div>
