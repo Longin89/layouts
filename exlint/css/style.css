@@ -868,3 +868,79 @@ li {
 .policies__img {
   margin: 0 148px 0 0;
 }
+
+.empower {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #232234;
+  background-image: url(../assets/img/png/spectra.png);
+}
+
+.empower__blurblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 285px auto 300px auto;
+  padding: 55px 85px;
+  gap: 10px;
+  width: 1035px;
+  height: 566px;
+  background: linear-gradient(242.44deg, rgba(174, 125, 253, 0.2) -30.7%, rgba(36, 35, 55, 0.2) 36.93%, rgba(36, 35, 55, 0.2) 62.82%, rgba(122, 77, 243, 0.2) 129.61%);
+  border: 2.5px solid #7A4DF3;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.info__title {
+  margin: 0 0 9px 0;
+  max-width: 510px;
+  font-family: "Poppins-SemiBold";
+  font-size: 32px;
+  line-height: 42px;
+  color: #E7E7E7;
+}
+
+.info__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 48px 0;
+  width: 542px;
+  font-family: "Poppins-Regular";
+  font-size: 20px;
+  line-height: 26px;
+  color: #E7E7E7;
+}
+
+.info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__link {
+  display: inline-block;
+  margin: 0 34px 0 0;
+  font-family: "Poppins-Regular";
+  font-size: 20px;
+  line-height: 26px;
+  color: #E7E7E7;
+}
+
+.info__link:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.info__started {
+  font-family: "Poppins-SemiBold";
+  font-size: 24px;
+  line-height: 31px;
+  color: #E7E7E7;
+}
