@@ -770,19 +770,12 @@
             background-image: url(../assets/img/png/spectra.png);
         }
 
-        .empower__container {
-
-
-        }
-
         .empower__blurblock {
             display: flex;
-            align-items: flex-start;
-            margin: 285px auto 300px auto;
-            padding: 55px 85px;
-            gap: 10px;
-            width: 1035px;
-            height: 566px;
+            justify-content: space-between;
+            margin: 285px auto;
+            padding: 0 85px;
+            max-width: 1035px;
             background: linear-gradient(242.44deg, rgba(174, 125, 253, 0.2) -30.7%, rgba(36, 35, 55, 0.2) 36.93%, rgba(36, 35, 55, 0.2) 62.82%, rgba(122, 77, 243, 0.2) 129.61%);
             border: 2.5px solid #7A4DF3;
             backdrop-filter: blur(10px);
@@ -790,7 +783,7 @@
         }
 
         .info__title {
-            margin: 0 0 9px 0;
+            margin: 55px 0 10px 0;
             max-width: 510px;
             font-family: 'Poppins-SemiBold';
             font-size: 32px;
@@ -801,7 +794,7 @@
         .info__subtitle {
             display: flex;
             align-items: center;
-            margin: 0 0 48px 0;
+            margin: 0 0 40px 0;
             width: 542px;
             font-family: 'Poppins-Regular';
             font-size: 20px;
@@ -811,19 +804,31 @@
 
         .info__list {
             display: flex;
+            margin: 0 0 45px 0;
         }
 
         .info__link {
             display: inline-block;
             margin: 0 34px 0 0;
+            padding: 0 0 0 4px;
             font-family: 'Poppins-Regular';
             font-size: 20px;
             line-height: 26px;
             color: #E7E7E7;
         }
+
+        .info__link:hover {
+            color: gray;
+        }
         
-        .info__link:nth-last-child(1) {
-            margin-right: 0;
+        .last {
+            margin: 0;
+        }
+
+        .links__item {
+            img {
+                padding: 5px 0 0 0;
+            }
         }
 
         .info__started {
@@ -831,4 +836,61 @@
             font-size: 24px;
             line-height: 31px;
             color: #E7E7E7;
+        }
+
+        .info__horline {
+            margin: 0 0 50px 0;
+            width: 532px;
+            border: 1px solid #BBB8CA;
+        }
+
+        .info__input {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            gap: 10px;
+            width: 640px;
+            height: 60px;
+            background: rgba(14, 13, 20, 0.7);
+            border: 1px solid #4B4A65;
+            border-radius: 10px;
+
+            img {
+                padding: 0 28px 0 0;
+                cursor: pointer;
+                transition: .1s;
+            }
+
+            img:hover {
+                filter: invert(50%);
+                transition: .1s;
+            }
+        }
+
+        .info__text {
+            padding: 0 0 0 25px;
+            font-family: 'Plex-Mono';
+            font-size: 20px;
+            line-height: 26px;
+            color: #E7E7E7;
+        }
+
+        .info__docslink {
+            display: inline-block;
+            margin: 0 0 71px 0;
+            font-family: 'Poppins-Regular';
+            font-size: 20px;
+            line-height: 26px;
+            color: #BBB8CA;
+        }
+
+        .info__docslink:hover {
+            border-bottom: 1px solid #BBB8CA;
+            transition: .5s;
+        }
+
+        .empower__logo {
+            margin: 70px 0 0 0;
         }
