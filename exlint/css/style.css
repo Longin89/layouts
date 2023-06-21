@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*ADDED FONTS*/
 @font-face {
   font-family: "Plex-Mono";
@@ -1043,10 +1044,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 0 auto;
   gap: 20px;
   width: 590px;
@@ -1054,6 +1051,16 @@ li {
   background: #1B1A29;
   border: 2.5px solid rgba(83, 58, 185, 0.5);
   border-radius: 30px;
+}
+
+.block__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .block__title {
@@ -1097,10 +1104,21 @@ li {
   font-size: 24px;
   line-height: 31px;
   color: #FEFEFE;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.title__button:hover {
+  cursor: pointer;
+  background-color: var(--links_color);
+  color: #010201;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .docs__subtitle {
   max-width: 226px;
+  margin: 0 0 128px 30px;
   font-family: "Poppins-Regular";
   font-size: 20px;
   line-height: 26px;
@@ -1121,7 +1139,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 14.84px 19.4062px;
+  margin: 0 0 0 30px;
   gap: 18.26px;
   width: 276px;
   height: 61px;
@@ -1131,4 +1149,45 @@ li {
   font-size: 24px;
   line-height: 31px;
   color: #E7E7E7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.docs__link:hover {
+  background-color: var(--links_color);
+  color: #010201;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 85px 0 0 0;
+  max-width: 230px;
+}
+
+.block__list__item {
+  position: relative;
+  margin: 10px;
+  font-family: "Poppins-Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #BBB8CA;
+}
+
+.block__list__item::before {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  right: 220px;
+  color: #7A4DF3;
 }
