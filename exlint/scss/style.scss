@@ -764,7 +764,7 @@
         }
 
         .empower {
-            background-size: 100%;
+            background-size: contain;
             background-repeat: no-repeat;
             background-color: #232234;
             background-image: url(../assets/img/png/spectra.png);
@@ -913,14 +913,19 @@
             background-clip: text;
         }
 
+        .quality__title_white {
+            -webkit-text-fill-color: #DCDAE7;
+        }
+
         .quality__block {
             display: flex;
-            margin: 0 auto;
+            margin: 0 auto 186px auto;
             gap: 20px;
             width: 590px;
             height: 371px;
             background: #1B1A29;
-            border: 2.5px solid rgba(83, 58, 185, 0.5);
+            border: 3px solid (rgba(83, 58, 185, 0.50));
+            box-shadow: 0px 0px 43px 0px rgba(151, 71, 255, 0.50);
             border-radius: 30px;
         }
 
@@ -1026,4 +1031,48 @@
             top: 0; 
             right: 220px;
             color: #7A4DF3;
+        }
+
+        .faq {
+            background-color: #232234;
+        }
+
+        .faq__title {
+            margin: 0 0 80px 262px;
+            font-family: 'Poppins-Bold';
+            font-size: 45px;
+            line-height: 130.49%;
+            background: linear-gradient(270deg, #E7E7E7 48%, #8247FF 83%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .faq__line {
+            width: 988px;
+            border-bottom: 2px solid  #4B4A65;
+        }
+
+        .faq__details {
+            margin: 0 0 0 262px;
+        }
+
+        .details__item {
+            max-width: 988px;
+        }
+
+        summary {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 39px 0;
+            font-family: 'Poppins-SemiBold';
+            font-size: 24px;
+            color: #BBB8CA;
+            list-style: none;
+        }
+
+        .details__text {
+            font-family: 'Poppins-Regular';
+            font-size: 20px;
+            color: #DCDAE7;
         }

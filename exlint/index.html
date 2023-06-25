@@ -292,13 +292,15 @@
         <section class="quality">
             <div class="quality__container _container">
                 <h2 class="quality__title">
-                    Don’t settle on quality, enforce clean code.
+                    <span class="quality__title_white">Don’t settle on quality,</span>
+                    enforce clean code
+                    <span class="quality__title_white">.</span>
                 </h2>
                 <div class="quality__block">
                     <div class="block__left">
                         <div class="block__title">
                             <h3 class="title__opensource">Open Source</h3>
-                            <button class="title__button">FREE</button>
+                            <button class="title__button" type="button">FREE</button>
                         </div>
     
                         <div class="block__docs">
@@ -324,6 +326,57 @@
                             GitHub Action CI/CD
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="faq__container _container">
+                <h2 class="faq__title">
+                    Frequently Asked Questions
+                </h2>
+
+                <div class="faq__details">
+                    <details class="details__item" open>
+                        <summary><span class="summary__title">What is a policy group run?</span><img src="../exlint/assets/img/png/cross.png" alt=""></summary>
+                        <span class="details__text">A policy is a set of rules that analyze code. 
+                        When a set of different policies are run together in a group, 
+                        Exlint goes through the code and looks for potential errors that match the rules in each policy with a single command.
+                        </span>
+                    </details>
+                    
+                    <div class="faq__line"></div>
+
+                    <details class="details__item">
+                        <summary><span class="summary__title">Do you require access to source code?</span><img src="../exlint/assets/img/png/cross.png" alt=""></summary>
+                        <span class="details__text">No, we will never need access to source code. 
+                        Exlint either runs locally through our CLI, or through your CI/CD Pipeline.
+                        </span>
+                    </details>
+
+                    <div class="faq__line"></div>
+
+                    <details class="details__item">
+                        <summary><span class="summary__title">Is there a public roadmap?</span><img src="../exlint/assets/img/png/cross.png" alt=""></summary>
+                        <span class="details__text">Yes, right here.</span>
+                    </details>
+
+                    <div class="faq__line"></div>
+
+                    <details class="details__item">
+                        <summary><span class="summary__title">What support do you provide?</span><img src="../exlint/assets/img/png/cross.png" alt=""></summary>
+                        <span class="details__text">We offer support via our Discord, in-app support and Github issues.</span>
+                    </details>
+
+                    <div class="faq__line"></div>
+
+                    <details class="details__item">
+                        <summary><span class="summary__title">What languages do you support?</span><img src="../exlint/assets/img/png/cross.png" alt=""></summary>
+                        <span class="details__text">Exlint is language agnostic. 
+                        Although we currently mainly support Javascript libraries, we will support many more libraries from different languages in the future.
+                        Stay tuned in our Roadmap!
+                        </span>
+                    </details>
                 </div>
             </div>
         </section>
