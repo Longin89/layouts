@@ -1,17 +1,17 @@
 /* VARIABLES & FONTS */
 @font-face {
   font-family: "Circle";
-  src: url(/assets/fonts/Circe-Regular.woff2);
+  src: url(../assets/fonts/Circe-Regular.woff2);
   font-weight: 400;
 }
 @font-face {
   font-family: "Plumb";
-  src: url(/assets/fonts/Plumb-Medium.woff2);
+  src: url(../assets/fonts/Plumb-Medium.woff2);
   font-weight: 500;
 }
 @font-face {
   font-family: "Plumb";
-  src: url(/assets/fonts/Plumb-Bold.woff2);
+  src: url(../assets/fonts/Plumb-Bold.woff2);
   font-weight: 700;
 }
 /* COMMON STYLES */
@@ -88,7 +88,7 @@
   margin: 0 4em 0 0;
   width: 20px;
   height: 18px;
-  background: url(/assets/png/search.png) no-repeat;
+  background: url(../assets/png/search.png) no-repeat;
   background-size: contain;
   cursor: pointer;
   border: 0;
@@ -98,7 +98,7 @@
   position: relative;
   left: 12px;
   width: 6.3em;
-  background: url(/assets/png/globe.png) no-repeat;
+  background: url(../assets/png/globe.png) no-repeat;
   cursor: pointer;
   color: white;
   border: 0;
@@ -111,7 +111,7 @@
   z-index: 0;
   width: 100%;
   min-height: 50em;
-  background: url(/assets/jpg/bg.jpg) center center no-repeat;
+  background: url(../assets/jpg/bg.jpg) center center no-repeat;
 }
 
 /* GRID SECTION */
@@ -174,7 +174,7 @@
   line-height: 135%;
 }
 .expo__about-wrapper::after {
-  content: url(/assets/png/arrow.png);
+  content: url(../assets/png/arrow.png);
   position: relative;
   left: 15px;
 }
@@ -210,7 +210,7 @@
 }
 
 .grid__container-wrapper::after {
-  content: url(/assets/png/arrow.png);
+  content: url(../assets/png/arrow.png);
   position: relative;
   left: 4px;
 }
@@ -299,7 +299,7 @@
   margin: 4.04em 0 2.61em 0;
 }
 .events__header-subtitle::after {
-  content: url(/assets/png/b_arrow.png);
+  content: url(../assets/png/b_arrow.png);
   position: relative;
   left: 5px;
 }
@@ -410,7 +410,7 @@
   color: #2E373B;
 }
 .news__texts-link::after {
-  content: url(/assets/png/b_arrow.png);
+  content: url(../assets/png/b_arrow.png);
   position: relative;
   left: 8px;
 }
@@ -593,7 +593,7 @@
 .subscribe__container-button {
   width: 40px;
   height: 45px;
-  background: url(/assets/svg/subscribe.svg) no-repeat;
+  background: url(../assets/svg/subscribe.svg) no-repeat;
   background-color: #F6404F;
   border: none;
   background-position: center;
