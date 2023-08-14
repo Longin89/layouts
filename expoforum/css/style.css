@@ -25,7 +25,7 @@
 
 .h2_title {
   font-family: "Plumb";
-  font-size: 1.87rem;
+  font-size: 1.87em;
   font-weight: 500;
   line-height: 130%;
   letter-spacing: -0.3px;
@@ -78,7 +78,12 @@
 }
 
 .header__options {
-  margin: 1.87em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 12.5em;
 }
 
@@ -102,6 +107,9 @@
   cursor: pointer;
   color: white;
   border: 0;
+}
+.header__options-language:hover {
+  color: #FFC41E;
 }
 
 /* MAIN */
@@ -195,13 +203,17 @@
 
 .grid__container-item {
   margin: 0 0 0 1.87em;
-  max-width: 15.93em;
+  max-width: 255px;
   max-height: 10.93em;
 }
 
 .grid__container-title {
   margin: 1.42em 4.2em 0.7em 2.4em;
-  width: 100%;
+  width: 80%;
+}
+
+.grid__container-link {
+  display: contents;
 }
 
 .grid__container-wrapper {
@@ -246,7 +258,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 3.12em 0 0 0;
-  min-height: 23.43em;
 }
 
 .expolinks__list {
@@ -258,7 +269,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 0 0 4em 0;
 }
 
 .expolinks__item-title {
@@ -276,7 +287,6 @@
 /* EVENTS SECTION */
 .events {
   background-color: #FFC41E;
-  min-height: 61.5em;
 }
 
 .events__header {
@@ -296,7 +306,7 @@
 }
 
 .events__header-subtitle {
-  margin: 4.04em 0 2.61em 0;
+  margin: 4em 0 2.61em 0;
 }
 .events__header-subtitle::after {
   content: url(../assets/png/b_arrow.png);
@@ -307,9 +317,8 @@
 .events__grids {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  -ms-grid-rows: 3, 1fr;
-  grid-template-rows: 3, 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  padding-bottom: 5em;
   -webkit-column-gap: 1.87em;
      -moz-column-gap: 1.87em;
           column-gap: 1.87em;
