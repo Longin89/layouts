@@ -125,6 +125,29 @@
   .explolinks__item-link {
     margin: 0 0.5em;
   }
+  /* EVENTS SECTION */
+  .events__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .events__header-subtitle {
+    margin: 21px 0;
+    text-align: right;
+  }
+  .events__header-subtitle::after {
+    left: -1px;
+  }
+  .events__header-title {
+    text-align: center;
+    margin: 0 0 1.3em 0;
+  }
+  .events__grid-item {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   body {
