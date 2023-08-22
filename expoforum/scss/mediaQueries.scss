@@ -131,6 +131,31 @@
   .explolinks__item-link {
     margin: 0 .5em;
   }
+
+  /* EVENTS SECTION */
+
+  .events__header {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .events__header-subtitle {
+    margin: 21px 0;
+    text-align: right;
+
+    &::after {
+      left: -1px;
+    }
+  }
+
+  .events__header-title {
+    text-align: center;
+    margin: 0 0 1.3em 0;
+  }
+
+  .events__grid-item {
+    text-align: center;
+  }
 }
 
 
