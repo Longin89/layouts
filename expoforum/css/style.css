@@ -444,6 +444,7 @@
 }
 
 .news__items-link {
+  display: block;
   color: #2E373B;
 }
 
