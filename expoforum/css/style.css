@@ -425,7 +425,7 @@
 .news__texts-link::after {
   content: url(../assets/png/b_arrow.png);
   position: relative;
-  left: 8px;
+  left: -3px;
 }
 
 .news__items-item img {
