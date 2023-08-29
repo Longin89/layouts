@@ -148,6 +148,11 @@
     flex-wrap: wrap;
   }
 
+  .events__header-title {
+    text-align: center;
+    margin: 0 0 1.3em 0;
+  }
+
   .events__header-subtitle {
     margin: 21px 0;
     text-align: right;
@@ -155,11 +160,6 @@
     &::after {
       left: -3px;
     }
-  }
-
-  .events__header-title {
-    text-align: center;
-    margin: 0 0 1.3em 0;
   }
 
   .events__grid-item {
@@ -229,7 +229,6 @@
 
     .footer__container {
       display: flex;
-      flex: 1 1 220px;
       flex-wrap: wrap;
       justify-content: flex-start;
       margin: 0;
@@ -321,18 +320,6 @@
      .expo__grid-container {
       justify-content: center;
       padding-right: .62em;
-     }
-
-     .blue,
-     .breeze {
-      width: 255px;
-      height: 145px;
-     }
-
-     .yellow,
-     .red {
-      height: 175px;
-      max-height: none;
      }
 
      .grid__container-title {
