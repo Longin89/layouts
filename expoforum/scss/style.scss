@@ -37,7 +37,7 @@
 
 .h2_title {
    font-family: 'Plumb';
-   font-size: 1.87em;
+   font-size: 1.87rem;
    font-weight: 500;
    line-height: 130%;
    letter-spacing: -0.3px;
@@ -53,7 +53,7 @@
 
 ._container {
    margin: 0 auto;
-   max-width: 69.4rem;
+   max-width: 69.4em;
 }
 
    /* HEADER */
@@ -154,9 +154,6 @@
    display: flex;
    flex-direction: column;
    margin-bottom: 0;
-}
-
-.expo__invite-title {
    font-family: 'Plumb';
    font-size: 4rem;
    font-weight: 700;
@@ -290,6 +287,7 @@
 
 .events__header-subtitle {
    margin: 4em 0 2.61em 0;
+  
    &::after {
       content: url(../assets/png/b_arrow.png);
       position: relative;
@@ -309,8 +307,6 @@
    display: inline-block;
    margin: 1.07em 0 0 .71em;
    font-size: .87rem;
-   font-weight: 400;
-   line-height: 135%;
    color: $black;
 }
 
@@ -388,7 +384,7 @@
    &::after {
       content: url(../assets/png/b_arrow.png);
       position: relative;
-      left: 8px;
+      left: -3px;
    }
 }
 
@@ -443,7 +439,6 @@
 .footer__item-link {
    margin: .71em 2.14em 0 0;
    font-size: .87rem;
-   font-weight: 400;
    line-height: 135%;
 
    &:last-child {
@@ -462,7 +457,6 @@
 
 .subscribe__subtitle {
    font-size: .87rem;
-   font-weight: 400;
    line-height: 135%;
 }
 
@@ -501,7 +495,6 @@ margin-top: .93em;
    &::placeholder {
       padding-left: 1.66em;
       font-size: .75em;
-      font-weight: 400;
       line-height: 135%;
    }
 }
