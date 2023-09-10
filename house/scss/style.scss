@@ -1,0 +1,84 @@
+   /* VARIABLES & FONTS */
+
+$light-green: #E1EDE6;
+$green: #598D66;
+$light-black: #2C2D35;
+
+@font-face {
+   font-family: 'Raleway-Medium'; 
+   src: url(../assets/fonts/Raleway-Medium.woff2);
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'Raleway-Bold'; 
+   src: url(../assets/fonts/Raleway-Bold.woff2);
+   font-weight: 700;
+}
+
+   /* COMMON STYLES */
+
+._container {
+   margin: 0 auto;
+   max-width: 1130px;
+ }
+
+.header {
+   background-color: $light-green;
+}
+
+.header__container {
+   display: flex;
+   justify-content: space-between;
+   padding: 22px 10px;
+}
+
+.header__logo {
+}
+
+.header__link {
+   font-family: 'Raleway-Bold';
+   font-size: 20px;
+   color: $green;
+}
+
+.header__nav {
+}
+
+.nav__menu {
+}
+
+.nav__list {
+   display: flex;
+   padding-left: 0;
+}
+
+.nav__item {
+   margin-right: 60px;
+
+   &:last-child {
+      margin-right: 2px;
+   }
+}
+.nav__item-link {
+   font-size: 20px;
+   color: $light-black;
+
+   &:hover {
+      color: $green;
+   }
+}
+
+.nav__item-button {
+   width: 22px;
+   height: 22px;
+   border: none;
+   background-image: url(/assets/svg/cart.svg);
+   background-position: center center;
+   background-color: transparent;
+
+   &:hover {
+      background-image: url(/assets/svg/cart_hover.svg);
+      cursor: pointer;
+   }
+}

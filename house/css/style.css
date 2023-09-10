@@ -1,0 +1,71 @@
+/* VARIABLES & FONTS */
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url(../assets/fonts/Raleway-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url(../assets/fonts/Raleway-Bold.woff2);
+  font-weight: 700;
+}
+/* COMMON STYLES */
+._container {
+  margin: 0 auto;
+  max-width: 1130px;
+}
+
+.header {
+  background-color: #E1EDE6;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 22px 10px;
+}
+
+.header__link {
+  font-family: "Raleway-Bold";
+  font-size: 20px;
+  color: #598D66;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+.nav__item {
+  margin-right: 60px;
+}
+.nav__item:last-child {
+  margin-right: 2px;
+}
+
+.nav__item-link {
+  font-size: 20px;
+  color: #2C2D35;
+}
+.nav__item-link:hover {
+  color: #598D66;
+}
+
+.nav__item-button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  background-image: url(/assets/svg/cart.svg);
+  background-position: center center;
+  background-color: transparent;
+}
+.nav__item-button:hover {
+  background-image: url(/assets/svg/cart_hover.svg);
+  cursor: pointer;
+}
