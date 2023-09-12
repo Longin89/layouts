@@ -2,18 +2,18 @@
 
 $light-green: #E1EDE6;
 $green: #598D66;
+$dark-green: #598D66;
 $light-black: #2C2D35;
+$light-grey: #F4F6F5;
 
 @font-face {
    font-family: 'Raleway-Medium'; 
    src: url(../assets/fonts/Raleway-Medium.woff2);
-   font-weight: 500;
 }
 
 @font-face {
    font-family: 'Raleway-Bold'; 
    src: url(../assets/fonts/Raleway-Bold.woff2);
-   font-weight: 700;
 }
 
    /* COMMON STYLES */
@@ -80,5 +80,53 @@ $light-black: #2C2D35;
    &:hover {
       background-image: url(/assets/svg/cart_hover.svg);
       cursor: pointer;
+   }
+}
+
+
+
+.production {
+}
+.production__container {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 10px;
+}
+
+.production__img {
+}
+.production__info {
+   display: flex;
+   flex-direction: column;
+}
+.production__title {
+   font-family: 'Raleway-Medium';
+   font-size: 60px;
+   color: $light-black;
+   font-weight: 500;
+   line-height: 110%; 
+}
+
+.production__title-span {
+   color: $green;
+}
+.production__subtitle {
+}
+.production__button {
+display: block;
+width: 225px;
+height: 65px;
+padding: 20px 60px;
+gap: 6px;
+color: $green;
+background-color: transparent;
+border: 1px solid $green;
+transition: .2s;
+
+   &:hover {
+      cursor: pointer;
+      color: $light-grey;
+      background-color: $dark-green;
+      transition: .2s;
    }
 }
