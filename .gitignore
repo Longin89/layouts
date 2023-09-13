@@ -1,2 +1,4 @@
-*.fig
+prepros.cfg
+prepros-6.config
 prepros.config
+*.fig
