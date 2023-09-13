@@ -2,9 +2,10 @@
 
 $light-green: #E1EDE6;
 $green: #598D66;
-$dark-green: #598D66;
+$dark-green: #376B44;
 $light-black: #2C2D35;
 $light-grey: #F4F6F5;
+$grey: #86928B;
 
 @font-face {
    font-family: 'Raleway-Medium'; 
@@ -31,9 +32,6 @@ $light-grey: #F4F6F5;
    display: flex;
    justify-content: space-between;
    padding: 22px 10px;
-}
-
-.header__logo {
 }
 
 .header__link {
@@ -67,6 +65,10 @@ $light-grey: #F4F6F5;
    &:hover {
       color: $green;
    }
+
+   &:active {
+      color: $dark-green;
+   }
 }
 
 .nav__item-button {
@@ -81,25 +83,30 @@ $light-grey: #F4F6F5;
       background-image: url(/assets/svg/cart_hover.svg);
       cursor: pointer;
    }
+
+   &:active {
+      background-image: url(/assets/svg/cart_active.svg);
+   }
 }
 
-
-
-.production {
-}
 .production__container {
    display: flex;
-   justify-content: space-between;
    padding: 0 10px;
 }
 
 .production__img {
 }
+
 .production__info {
    display: flex;
    flex-direction: column;
+   padding: 102px 0;
+   padding-left: 26px;
 }
+
 .production__title {
+   margin-bottom: 0;
+   padding-bottom: 5px;
    font-family: 'Raleway-Medium';
    font-size: 60px;
    color: $light-black;
@@ -110,15 +117,24 @@ $light-grey: #F4F6F5;
 .production__title-span {
    color: $green;
 }
+
 .production__subtitle {
+   padding-bottom: 40px;
+   font-family: 'Raleway-Medium';
+   font-size: 18px;
+   line-height: 150%; /* 27px */
+   color: $grey;
 }
+
 .production__button {
 display: block;
 width: 225px;
 height: 65px;
 padding: 20px 60px;
+margin: 0 0 0 5px;
 gap: 6px;
 color: $green;
+font-size: 20px;
 background-color: transparent;
 border: 1px solid $green;
 transition: .2s;
@@ -126,7 +142,41 @@ transition: .2s;
    &:hover {
       cursor: pointer;
       color: $light-grey;
-      background-color: $dark-green;
+      background-color: $green;
       transition: .2s;
    }
+
+   &:active {
+      background-color: $dark-green;
+   }
+}
+
+
+
+.reproduction {
+}
+
+.section__container {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 10px;
+}
+
+.reproduction__title {
+   color: $light-black;
+   font-size: 40px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 110%; /* 44px */
+}
+
+.reproduction__buttons {
+   display: flex;
+   align-items: flex-end;
+}
+.reproduction_button-france {
+}
+.reproduction_button-germany {
+}
+.reproduction_button-england {
 }
