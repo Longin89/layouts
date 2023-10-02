@@ -433,6 +433,11 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__logo {
@@ -484,11 +489,12 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 0 75px;
+  margin: 16px 140px 0 0;
 }
 
 .footer__links-list {
-  margin-right: 20px;
+  margin: 0 60px 0 0;
+  padding: 0;
 }
 .footer__links-list:last-child {
   margin-right: 0;
@@ -529,7 +535,7 @@ button:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 23px 0 0 252px;
+  padding: 23px 10px 0 0;
 }
 
 .social__links {
