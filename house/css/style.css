@@ -452,6 +452,16 @@ button:hover {
   color: #2C2D35;
   font-size: 1.25rem;
   line-height: normal;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.footer__logo-tel:hover {
+  color: #598D66;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.footer__logo-tel:active {
+  color: #376B44;
 }
 
 .footer__logo-subtitle {
@@ -496,6 +506,12 @@ button:hover {
   font-weight: 500;
   line-height: 150%; /* 27px */
 }
+.footer__list-link:hover {
+  color: #598D66;
+}
+.footer__list-link:active {
+  color: #376B44;
+}
 
 .footer__social {
   display: -webkit-box;
@@ -524,6 +540,20 @@ button:hover {
 }
 .social__link-item:last-child {
   margin-right: 0;
+}
+
+.social__link-svg {
+  fill: #2C2D35;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.social__link-svg:hover {
+  fill: #598D66;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.social__link-svg:active {
+  fill: #376B44;
 }
 
 .social__copy,
