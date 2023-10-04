@@ -405,6 +405,16 @@ transition: .2s;
    color: $light-black;
    font-size: 1.25rem;
    line-height: normal;
+   transition: .2s;
+
+   &:hover {
+      color: $green;
+      transition: .2s;
+   }
+
+   &:active {
+      color: $dark-green;
+   }
 }
 
 .footer__logo-subtitle {
@@ -448,6 +458,14 @@ transition: .2s;
    font-size: 1.12rem;
    font-weight: 500;
    line-height: 150%; /* 27px */
+
+   &:hover {
+      color: $green;
+   }
+
+   &:active {
+      color: $dark-green;
+   }
 }
 
 .footer__social {
@@ -468,6 +486,20 @@ transition: .2s;
 
    &:last-child {
       margin-right: 0;
+   }
+}
+
+.social__link-svg {
+   fill: $light-black;
+   transition: .2s;
+
+   &:hover {
+      fill: $green;
+      transition: .2s;
+   }
+
+   &:active {
+      fill: $dark-green;
    }
 }
 
