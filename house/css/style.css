@@ -276,7 +276,7 @@ button:hover {
 
 /* COLLECTION SECTION */
 .collection {
-  background: url(/assets/jpg/collection.jpg) no-repeat;
+  background: url(../assets/jpg/collection.jpg) no-repeat;
   background-position-x: center;
 }
 
@@ -358,7 +358,7 @@ button:hover {
   margin: 4.37em 0.62em;
   width: 445px;
   height: 440px;
-  background: url(/assets/png/frame.png) no-repeat;
+  background: url(../assets/png/frame.png) no-repeat;
   background-size: contain;
 }
 
