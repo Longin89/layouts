@@ -261,8 +261,10 @@ transition: .2s;
    /* COLLECTION SECTION */
 
 .collection {
-   background: url(../assets/jpg/collection.jpg) no-repeat;
-   background-position-x: center;
+   background-image: linear-gradient(114deg, rgba(2,0,36,1) 0%, rgba(13,44,67,0.09) 80%), url(../assets/jpg/collection.jpg);
+   background-size: cover;
+   background-position: center;
+
 }
 
 .collection__container {
@@ -401,6 +403,8 @@ transition: .2s;
 }
 
 .footer__logo-tel {
+   display: flex;
+   flex-direction: column;
    padding: 0 0 .5em .5em;
    color: $light-black;
    font-size: 1.25rem;
@@ -418,9 +422,10 @@ transition: .2s;
 }
 
 .footer__logo-subtitle {
-   padding: 0 0 1.27em .55em;
+   margin-bottom: 23px;
+   padding: 5px 0 0 0;
    color: $grey;
-   font-size: 1.12em;
+   font-size: .9em;
    line-height: normal;
 }
 
@@ -472,7 +477,7 @@ transition: .2s;
    display: flex;
    flex-direction: column;
    align-items: flex-end;
-   padding: 1.43em .62em 0 0;
+   padding: 1.43em .62em 0 .62em;
 }
 
 .social__links {
