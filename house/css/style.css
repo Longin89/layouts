@@ -67,15 +67,15 @@ button:hover {
   width: 22px;
   height: 22px;
   border: none;
-  background-image: url(/assets/svg/cart.svg);
+  background-image: url(../assets/svg/cart.svg);
   background-position: center center;
   background-color: transparent;
 }
 .nav__item-button:hover {
-  background-image: url(/assets/svg/cart_hover.svg);
+  background-image: url(../assets/svg/cart_hover.svg);
 }
 .nav__item-button:active {
-  background-image: url(/assets/svg/cart_active.svg);
+  background-image: url(../assets/svg/cart_active.svg);
 }
 
 /* PRODUCTION SECTION */
