@@ -1,6 +1,6 @@
 @media screen and (min-width: 511px) and (max-width: 768px) {
   html {
-    font-size: 0.75rem;
+    font-size: 18px;
   }
   ._container {
     max-width: 768px;
@@ -11,7 +11,7 @@
     padding: 3vw 5px;
   }
   .header__link {
-    font-size: 2.7vw;
+    font-size: 1.25rem;
   }
   .nav__list {
     margin-left: 2em;
@@ -20,7 +20,7 @@
     margin-right: 8vw;
   }
   .nav__item-link {
-    font-size: calc(1vw + 10px);
+    font-size: 1.1rem;
   }
   .production__container {
     -webkit-box-pack: center;
@@ -33,8 +33,8 @@
     margin: 0 1.75em 0 0;
   }
   .production__img img {
-    max-width: 330px;
-    width: 43vw;
+    width: 330px;
+    min-width: 195px;
   }
   .production__info {
     padding: 0;
@@ -42,31 +42,32 @@
   }
   .production__title {
     padding: 0;
-    font-size: 5.1vw;
+    font-size: 2.5rem;
     font-weight: normal;
   }
   .production__subtitle {
     padding: 0;
-    font-size: 2.3vw;
+    font-size: 1.1rem;
     max-width: 330px;
   }
   .production__button {
     margin: 1.1em 0 0 0;
     padding: 1em 2.5em;
-    font-size: 2.6vw;
-    width: 27vw;
-    height: 8vw;
+    font-size: 1.25rem;
+    width: 10.5em;
+    height: 3em;
   }
   .reproduction__title {
     padding-left: 0.5em;
-    margin: 1.5em 0 0 0.5em;
-    font-size: 4vw;
+    margin: 1.5em 0.5em 0 0.5em;
+    font-size: 1.9rem;
   }
   .reproduction__buttons {
     margin: 1em 2em 0 0;
   }
   .reproduction__button {
-    font-size: 2.6vw;
+    margin-top: 1.75em;
+    font-size: 1.25rem;
   }
   .reproduction__grid {
     margin: 0.7em 1em 0 1em;
@@ -81,16 +82,12 @@
     height: 55vw;
     min-height: 250px;
   }
-  .reproduction__grid-title {
-    font-size: 4vw;
-  }
-  .reproduction__grid-desc {
-    font-size: 2.3vw;
+  .reproduction__grid-price {
+    margin-bottom: 0.9em;
   }
   .reproduction__grid-button {
     width: 100%;
-    height: 10%;
-    font-size: 2.5vw;
+    font-size: 1rem;
   }
   .collection {
     margin: 4em auto;
@@ -102,20 +99,19 @@
     width: 60px;
   }
   .collection__title {
-    padding: 2.3em 0 0 0.7em;
-    font-size: 4vw;
+    padding: 2.5em 0 0 0.7em;
+    font-size: 1.9rem;
   }
   .collection__desc {
-    margin-top: 1.6em;
+    margin-top: 1.5em;
     padding: 0 2em;
     max-width: 100%;
-    font-size: 2.4vw;
+    font-size: 1.1rem;
   }
   .collection__button {
-    margin: 1em 0 3.75em 2em;
-    font-size: 2.5vw;
-    width: 27vw;
-    height: 8vw;
+    margin: 1.5em 0 3.2em 2em;
+    font-size: 1.25rem;
+    width: 27%;
   }
   .team__container {
     -ms-flex-wrap: wrap;
@@ -126,8 +122,7 @@
   }
   .team__frame {
     margin: 0 2em;
-    width: 510px;
-    height: 504px;
+    width: 67%;
     min-width: 235px;
     min-height: 290px;
     background: url(../assets/png/frame_tablet.png) no-repeat;
@@ -135,11 +130,11 @@
   }
   .team__desc-title {
     margin: 0 0 0 0.5em;
-    font-size: 4vw;
+    font-size: 1.9rem;
   }
   .team__desc-subtitle {
     margin: 1.75em 0 0 1em;
-    font-size: 2.4vw;
+    font-size: 1.15rem;
     max-width: 100%;
     word-spacing: -2px;
   }
@@ -166,20 +161,123 @@
     padding: 0;
   }
   .footer__item-title {
-    font-size: 2.6vw;
+    font-size: 1.25rem;
   }
   .footer__links {
     margin: 0.25em 0 2em 2.5em;
   }
   .footer__list-link {
-    font-size: calc(1vw + 10px);
+    font-size: 1.1rem;
   }
   .footer__social {
     margin: 0.5em calc(12vw - 15px) 0 0;
     padding: 0;
   }
 }
-@media screen and (min-width: 511px) and (max-width: 650px) {
+@media screen and (min-width: 511px) and (max-width: 690px) {
+  .header__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 5px;
+  }
+  .header__nav {
+    margin: 0;
+    width: 100%;
+  }
+  .header__logo {
+    margin: 0.2em auto;
+    width: 31.87em;
+    text-align: center;
+    border-bottom: 1px solid #C3D1C6;
+  }
+  .header__link,
+.nav__item-link {
+    font-size: 1.2rem;
+  }
+  .nav__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .production__container {
+    margin: 3.75em 0 0 0;
+  }
+  .production__img {
+    margin: 0;
+  }
+  .production__img img {
+    width: 15em;
+    padding: 0 1em 0 0;
+  }
+  .production__title {
+    margin: 10px 0 0 0;
+    font-size: 2.2rem;
+  }
+  .production__subtitle {
+    margin: 5px 0 0 0;
+    width: 15.5em;
+  }
+  .production__info {
+    margin: 0 26px 0 0;
+    padding: 0;
+  }
+  .production__button {
+    margin: 0.5em 0;
+    padding: 15px 30px;
+    width: 178px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+  .reproduction__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .reproduction__title {
+    margin: 1em 0.5em 0 0.5em;
+    font-size: 1.5rem;
+    padding-bottom: 4px;
+  }
+  .reproduction__buttons {
+    margin: 0 0 20px 21px;
+  }
+  .reproduction__button {
+    font-size: 1.2rem;
+  }
+  .reproduction__grid {
+    margin: 0;
+  }
+  .reproduction__grid-item {
+    width: 240px;
+  }
+  .reproduction__grid-img img {
+    max-height: 250px;
+    width: 200px;
+  }
+  .reproduction__grid-author {
+    margin: 10px 0 12px 0;
+    font-size: 1rem;
+  }
+  .reproduction__grid-desc {
+    margin: 0 0 1.6em 0;
+    font-size: 1rem;
+  }
+  .reproduction__grid-price {
+    margin: 0 0 10px 0;
+  }
+  .reproduction__grid-title {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+  }
+  .reproduction__grid-button {
+    width: 100%;
+    height: 50px;
+  }
+  #big__desc {
+    margin-bottom: 10px;
+  }
+  .team__frame {
+    max-height: 400px;
+  }
   .footer__container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -195,10 +293,66 @@
   .footer__links {
     margin: 1em auto;
   }
+  .footer__item-title {
+    font-size: 1.1rem;
+  }
+  .footer__list-link,
+.footer__logo-subtitle {
+    font-size: 1rem;
+  }
   .social__copy,
 .social__right {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 511px) and (max-width: 576px) {
+  .nav__list {
+    margin-left: 0;
+  }
+  .header__nav {
+    margin-left: 1em;
+  }
+  .production__title {
+    font-size: 2rem;
+  }
+  .production__button {
+    margin: 1em 0;
+  }
+  .reproduction__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reproduction__title {
+    margin: 1em 0.5em;
+  }
+  .reproduction__buttons {
+    margin: 1em;
+  }
+  .reproduction__button {
+    margin-top: 0;
+  }
+  .reproduction__grid-author {
+    font-size: 0.75rem;
+  }
+  .reproduction__grid-title {
+    font-size: 1.25rem;
+  }
+  .reproduction__grid-price {
+    font-size: 1.25rem;
+  }
+  .collection__title {
+    font-size: 1.75rem;
+  }
+  .header__link,
+.nav__item-link,
+.production__subtitle,
+.reproduction__grid-button,
+.collection__desc,
+.collection__button,
+.team__desc-subtitle {
+    font-size: 1rem;
   }
 }
