@@ -1,4 +1,4 @@
-@media screen and (min-width: 511px) and (max-width: 768px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
   html {
     font-size: 18px;
   }
@@ -174,7 +174,7 @@
     padding: 0;
   }
 }
-@media screen and (min-width: 511px) and (max-width: 690px) {
+@media screen and (min-width: 321px) and (max-width: 690px) {
   .header__container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -307,7 +307,7 @@
             justify-content: center;
   }
 }
-@media screen and (min-width: 511px) and (max-width: 576px) {
+@media screen and (min-width: 321px) and (max-width: 576px) {
   .nav__list {
     margin-left: 0;
   }
@@ -354,5 +354,26 @@
 .collection__button,
 .team__desc-subtitle {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 475px) {
+  .production__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 1.5em;
+  }
+  .production__info {
+    margin: 0;
+    text-align: center;
+  }
+  .production__subtitle {
+    width: 100%;
+  }
+  .production__button {
+    margin: 1em auto;
+  }
+  .reproduction__title {
+    margin: 1em auto;
+    padding: 0;
   }
 }
