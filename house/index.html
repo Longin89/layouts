@@ -19,6 +19,10 @@
 				</div>
 				<div class="header__nav">
 					<nav class="nav__menu">
+						<input id="menu__toggle" type="checkbox" />
+						<label class="menu__btn" for="menu__toggle">
+						  <span></span>
+						</label>
 						<ul class="nav__list">
 							<li class="nav__item">
 								<a href="#" class="nav__item-link" target="_blank">
@@ -35,12 +39,8 @@
 									О нас
 								</a>
 							</li>
-							<li class="nav__item">
-								<a href="#" class="nav__item-link">
-									<button class="nav__item-button"></button>
-								</a>
-							</li>
 						</ul>
+						<button class="nav__item-button nav__item-link"></button>
 					</nav>
 				</div>
 			</div>
@@ -71,14 +71,14 @@
 						Репродукции
 					</h2>
 					<div class="reproduction__buttons">
-						<button type="button" class="reproduction__button france-button">Франция</button>
+						<button type="button" class="reproduction__button france-button active">Франция</button>
 						<button type="button" class="reproduction__button germany-button">Германия</button>
 						<button type="button" class="reproduction__button england-button">Англия</button>
 					</div>
 					<div class="reproduction__grid">
 						<div class="reproduction__grid-item">
 							<picture class="reproduction__grid-img">
-								<img src="./assets/jpg/france/hunt.jpg" alt="hunt picture">
+								<img src="./assets/jpg/france/hunt.jpg" alt="picture" class="painting">
 							</picture>
 							<p class="reproduction__grid-author">
 								Марсель Руссо
@@ -98,7 +98,7 @@
 						</div>
 						<div class="reproduction__grid-item">
 							<picture class="reproduction__grid-img">
-								<img src="./assets/jpg/france/lady.jpg" alt="lady with dog picture">
+								<img src="./assets/jpg/france/lady.jpg" alt="picture" class="painting">
 							</picture>
 							<p class="reproduction__grid-author">
 								Анри Селин
@@ -118,7 +118,7 @@
 						</div>
 						<div class="reproduction__grid-item">
 							<picture class="reproduction__grid-img">
-								<img src="./assets/jpg/france/procedure.jpg" alt="procedure picture">
+								<img src="./assets/jpg/france/procedure.jpg" alt="picture" class="painting">
 							</picture>
 							<p class="reproduction__grid-author">
 								Франсуа Дюпон
@@ -138,7 +138,7 @@
 						</div>
 						<div class="reproduction__grid-item">
 							<picture class="reproduction__grid-img">
-								<img src="./assets/jpg/france/rose.jpg" alt="rose picture">
+								<img src="./assets/jpg/france/rose.jpg" alt="picture" class="painting">
 							</picture>
 							<p class="reproduction__grid-author">
 								Луи Детуш
@@ -158,7 +158,7 @@
 						</div>
 						<div class="reproduction__grid-item">
 							<picture class="reproduction__grid-img">
-								<img src="./assets/jpg/france/dining.jpg" alt="bird's dining picture">
+								<img src="./assets/jpg/france/dining.jpg" alt="picture" class="painting">
 							</picture>
 							<p class="reproduction__grid-author">
 								Франсуа Дюпон
@@ -178,7 +178,7 @@
 						</div>
 						<div class="reproduction__grid-item">
 							<picture class="reproduction__grid-img">
-								<img src="./assets/jpg/france/fish.jpg" alt="fish picture">
+								<img src="./assets/jpg/france/fish.jpg" alt="picture" class="painting">
 							</picture>
 							<p class="reproduction__grid-author">
 								Пьер Моранж

@@ -106,7 +106,6 @@ html {
 
 .reproduction__grid-button {
   width: 100%;
-  font-size: 1rem;
 }
 
 .collection {
@@ -137,7 +136,6 @@ html {
   margin: 1.5em 0 3.2em 2em;
   font-size: 1.25rem;
   width: 27%;
-
 }
 
 .team__container {
@@ -206,7 +204,7 @@ html {
   }
 
 
-  @media screen and (min-width: 321px) and (max-width: 690px) {
+  @media screen and (min-width: 321px) and (max-width: 721px) {
     .header__container {
       flex-wrap: wrap;
       padding: 0 5px;
@@ -222,6 +220,10 @@ html {
       width: 31.87em;
       text-align: center;
       border-bottom: 1px solid #C3D1C6;
+    }
+
+    .nav__menu {
+      justify-content: center;
     }
 
     .header__link,
@@ -271,6 +273,12 @@ html {
 
     .reproduction__container {
       justify-content: flex-start;
+    }
+
+    .reproduction__grid-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .reproduction__title {
@@ -326,10 +334,6 @@ html {
       height: 50px;
     }
 
-    #big__desc {
-      margin-bottom: 10px;
-    }
-
     .team__frame {
       max-height: 400px;
     }
@@ -369,10 +373,6 @@ html {
         margin-left: 0;
       }
   
-      .header__nav {
-        margin-left: 1em;
-      }
-  
       .production__title {
         font-size: 2rem;
       }
@@ -383,6 +383,12 @@ html {
   
       .reproduction__container {
         justify-content: center;
+      }
+
+      .reproduction__grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
   
       .reproduction__title {
@@ -395,10 +401,6 @@ html {
   
       .reproduction__button {
         margin-top: 0;
-      }
-  
-      .reproduction__grid-author {
-        font-size: .75rem;
       }
   
       .reproduction__grid-title {
@@ -414,7 +416,6 @@ html {
       }
   
       .header__link,
-      .nav__item-link,
       .production__subtitle,
       .reproduction__grid-button,
       .collection__desc,
@@ -447,4 +448,250 @@ html {
         margin: 1em auto;
         padding: 0;
       }
+
+      .reproduction__grid-author {
+        font-size: 0.75rem;
+      }
+
+      .reproduction__grid-title {
+        font-size: 1rem;
+      }
+
+      .reproduction__grid-desc {
+        font-size: 0.9rem;
+      }
+
+      .reproduction__button {
+        padding: .5em;
+      }
+
+      #big__desc {
+        margin-bottom: 19px;
+      }
+
+      .reproduction__grid-button,
+      .collection__desc {
+        font-size: .9rem;
+      }
+
+      .collection__title {
+        font-size: 1.5rem;
+      }
+
+      .collection__button {
+        width: 30%;
+        height: 20%;
+      }
+
+      .team__desc {
+        padding-top: 0;
+      }
+    }
+
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .header__logo {
+        border-bottom: none;
+      }
+      
+      #menu__toggle {
+        display: none;
+      }
+
+      #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+      }
+
+      #menu__toggle:checked + .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+      }
+
+      #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+
+      #menu__toggle:checked ~ .nav__list {
+        left: 0;
+      }
+
+      .menu__btn {
+        position: absolute;
+        top: 96px;
+        left: 20px;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: gray;
+        transition: .2s;
+      }
+
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+
+      .nav__list {
+        display: inline-block;
+        position: absolute;
+        top: 69px;
+        left: -100%;
+        width: 85%;
+        height: 40%;
+        margin: 0;
+        padding: 46px 0 50px 0;
+        background-color: #E1EDE6;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .2s;
+      }
+
+      .nav__item {
+        margin-right: 0;
+      }
+
+      .nav__item-link {
+        display: inline-block;
+        margin: 20px;
+        color: #333;
+        font-size: 1.25rem;
+        transition-duration: .2s;
+      }
+
+      .nav__item-link:hover {
+        background-color: #CFD8DC;
+      }
+
+      .header {
+        background-color: #fff;
+      }
+
+      .header__container {
+        padding: 0;
+      }
+      
+      .header__logo {
+        height: 68px;
+        margin: 0;
+
+        img {
+          margin-top: 1em;
+        }
+      }
+
+      .nav__menu {
+        justify-content: flex-end;
+        background-color: #E1EDE6;
+        height: 62px;
+      }
+
+      .nav__item-button {
+        margin: 1em 1.25em;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-color: #E1EDE6;
+      }
+
+      .production__img {
+        img {
+          display: none;
+        }
+      }
+
+      .reproduction__grid-item {
+        max-width: 18.25rem;
+      }
+
+      .reproduction__grid-author,
+      .reproduction__grid-desc,
+      .collection__desc,
+      .team__desc-subtitle {
+        font-size: 1rem;
+      }
+
+      .reproduction__grid-title {
+        font-size: 1.5rem;
+      }
+
+      .reproduction__grid-button {
+        font-size: 1.12rem;
+      }
+
+      .collection__title {
+        padding: 2em 0 0 0.5em;
+      }
+
+      .collection__button {
+        margin: 2em auto;
+        width: 90%;
+        font-size: 1.12rem;
+      }
+
+      .team__frame {
+        margin: 0 auto;
+        width: 90%;
+      }
+
+      .team__desk-img {
+        justify-content: center;
+        margin: 1.75em 1em;
+      }
+
+      .footer__links {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 1em;
+      }
+
+      .footer__links-list {
+        margin: .5em 1em;
+      }
+
+      .footer__logo {
+        flex-wrap: nowrap;
+      }
+
+      .footer__logo-tel {
+        margin: 26px 1em;
+      }
+
+      .footer__logo-link {
+        margin: 26px 0 26px 15px;
+      }
+
+      .social__right,
+      .social__copy {
+        text-align: center;
+      }
+    }
+
+    @media screen  and (max-width: 355px) {
+      .reproduction__buttons {
+        margin: 1em;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .reproduction__button {
+        margin: .5em 1em;
+
+        &:last-child {
+          margin-right: 1em;
+        }
+      }
+      
     }
