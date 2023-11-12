@@ -34,7 +34,7 @@ function fadingGermany() {
           price[i].classList.add('fade');
         }
     });
-  }, 250); 
+  }, 400); 
 }
 
 
@@ -74,7 +74,7 @@ function fadingFrance() {
           price[i].classList.add('fade');
         }
     });
-  }, 250); 
+  }, 400); 
 }
 
 
@@ -114,7 +114,7 @@ function fadingEngland() {
           price[i].classList.add('fade');
         }
     });
-  }, 250); 
+  }, 400); 
 }
 
 //EVENTS FOR BUTTONS
