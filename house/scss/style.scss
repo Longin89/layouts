@@ -33,12 +33,17 @@ $dark-yellow: #D9B949;
 
  .fade {
    opacity: 1;
-   transition: opacity 250ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+   transition: opacity 250ms;
  }
 
  .invise {
    opacity: 0;
-   transition: opacity 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+   transition: opacity 250ms;
+ }
+
+ .active {
+   background: $dark-green !important;
+   color: #F4F6F5 !important;
  }
 
    /* HEADER */
@@ -215,9 +220,13 @@ transition: .2s;
    }
 
    &:hover {
-      background-color: $dark-green;
+      background-color: $green;
       color: $light-grey;
       transition: .2s;
+   }
+
+   &:active {
+      background-color: $dark-green;
    }
 }
 
@@ -318,7 +327,7 @@ transition: .2s;
    color: $light-grey;
    font-size: 2.5rem;
    font-weight: 500;
-   line-height: 100%; /* 40px */
+   line-height: 100%;
 }
 
 .collection__desc {
@@ -327,7 +336,7 @@ transition: .2s;
    max-width: 580px;
    color: #FFF;
    font-size: 1.12rem;
-   line-height: 150%; /* 27px */
+   line-height: 150%;
    word-spacing: -1px;
 }
 
@@ -383,13 +392,13 @@ transition: .2s;
    color: $light-black;
    font-size: 2.5rem;
    font-weight: 500;
-   line-height: 110%; /* 44px */
+   line-height: 110%;
 }
 
 .team__desc-subtitle {
    color: $light-black;
    font-size: 1.12rem;
-   line-height: 150%; /* 27px */
+   line-height: 150%;
    word-spacing: -1px;
 }
 
@@ -495,7 +504,7 @@ transition: .2s;
    color: $grey;
    font-size: 1.12rem;
    font-weight: 500;
-   line-height: 150%; /* 27px */
+   line-height: 150%;
 
    &:hover {
       color: $green;
