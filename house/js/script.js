@@ -13,13 +13,15 @@ function fadingGermany() {
   }
 
   setTimeout(() => {
-    requestAnimationFrame(() => {
-      painting.forEach((picture, l) => picture.src = germanyPainting[l]);
-      author.forEach((auths, i) => auths.innerHTML = germanyAuthors[i]);
-      title.forEach((titles, j) => titles.innerHTML = germanyTitles[j]);
-      desc.forEach((descs, k) => descs.innerHTML = germanyDescs[k]);
-      price.forEach((prices, m) => prices.innerHTML = germanyPrices[m]);
-            
+    painting.forEach((picture, l) => picture.src = germanyPainting[l]);
+    author.forEach((auths, i) => auths.innerHTML = germanyAuthors[i]);
+    title.forEach((titles, j) => titles.innerHTML = germanyTitles[j]);
+    desc.forEach((descs, k) => descs.innerHTML = germanyDescs[k]);
+    price.forEach((prices, m) => prices.innerHTML = germanyPrices[m]);
+  }, 200);
+
+  setTimeout(() => {
+    requestAnimationFrame(() => {         
         for(let i = 0; i < author.length; i++) {
           painting[i].classList.remove('invise');
           author[i].classList.remove('invise');
@@ -34,7 +36,7 @@ function fadingGermany() {
           price[i].classList.add('fade');
         }
     });
-  }, 200); 
+  }, 300); 
 }
 
 
@@ -53,13 +55,15 @@ function fadingFrance() {
   }
 
   setTimeout(() => {
-    requestAnimationFrame(() => {
-      painting.forEach((picture, l) => picture.src = francePainting[l]);
-      author.forEach((auths, i) => auths.innerHTML = franceAuthors[i]);
-      title.forEach((titles, j) => titles.innerHTML = franceTitles[j]);
-      desc.forEach((descs, k) => descs.innerHTML = franceDescs[k]);
-      price.forEach((prices, m) => prices.innerHTML = francePrices[m]);
-            
+    painting.forEach((picture, l) => picture.src = francePainting[l]);
+    author.forEach((auths, i) => auths.innerHTML = franceAuthors[i]);
+    title.forEach((titles, j) => titles.innerHTML = franceTitles[j]);
+    desc.forEach((descs, k) => descs.innerHTML = franceDescs[k]);
+    price.forEach((prices, m) => prices.innerHTML = francePrices[m]);
+  }, 200);
+
+  setTimeout(() => {
+    requestAnimationFrame(() => {            
         for(let i = 0; i < author.length; i++) {
           painting[i].classList.remove('invise');
           author[i].classList.remove('invise');
@@ -74,7 +78,7 @@ function fadingFrance() {
           price[i].classList.add('fade');
         }
     });
-  }, 200); 
+  }, 300); 
 }
 
 
@@ -93,13 +97,15 @@ function fadingEngland() {
   }
 
   setTimeout(() => {
+    painting.forEach((picture, l) => picture.src = englandPainting[l]);
+    author.forEach((auths, i) => auths.innerHTML = englandAuthors[i]);
+    title.forEach((titles, j) => titles.innerHTML = englandTitles[j]);
+    desc.forEach((descs, k) => descs.innerHTML = englandDescs[k]);
+    price.forEach((prices, m) => prices.innerHTML = englandPrices[m]);
+  }, 200);
+
+  setTimeout(() => {
     requestAnimationFrame(() => {
-      painting.forEach((picture, l) => picture.src = englandPainting[l]);
-      author.forEach((auths, i) => auths.innerHTML = englandAuthors[i]);
-      title.forEach((titles, j) => titles.innerHTML = englandTitles[j]);
-      desc.forEach((descs, k) => descs.innerHTML = englandDescs[k]);
-      price.forEach((prices, m) => prices.innerHTML = englandPrices[m]);
-            
         for(let i = 0; i < author.length; i++) {
           painting[i].classList.remove('invise');
           author[i].classList.remove('invise');
@@ -114,7 +120,7 @@ function fadingEngland() {
           price[i].classList.add('fade');
         }
     });
-  }, 200); 
+  }, 300); 
 }
 
 //EVENTS FOR BUTTONS
