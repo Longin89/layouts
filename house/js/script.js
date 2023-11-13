@@ -18,7 +18,7 @@ function fadingGermany() {
     title.forEach((titles, j) => titles.innerHTML = germanyTitles[j]);
     desc.forEach((descs, k) => descs.innerHTML = germanyDescs[k]);
     price.forEach((prices, m) => prices.innerHTML = germanyPrices[m]);
-  }, 200);
+  }, 600);
 
   setTimeout(() => {
     requestAnimationFrame(() => {         
@@ -36,7 +36,7 @@ function fadingGermany() {
           price[i].classList.add('fade');
         }
     });
-  }, 300); 
+  }, 600); 
 }
 
 
@@ -60,7 +60,7 @@ function fadingFrance() {
     title.forEach((titles, j) => titles.innerHTML = franceTitles[j]);
     desc.forEach((descs, k) => descs.innerHTML = franceDescs[k]);
     price.forEach((prices, m) => prices.innerHTML = francePrices[m]);
-  }, 200);
+  }, 600);
 
   setTimeout(() => {
     requestAnimationFrame(() => {            
@@ -78,7 +78,7 @@ function fadingFrance() {
           price[i].classList.add('fade');
         }
     });
-  }, 300); 
+  }, 600); 
 }
 
 
@@ -102,7 +102,7 @@ function fadingEngland() {
     title.forEach((titles, j) => titles.innerHTML = englandTitles[j]);
     desc.forEach((descs, k) => descs.innerHTML = englandDescs[k]);
     price.forEach((prices, m) => prices.innerHTML = englandPrices[m]);
-  }, 200);
+  }, 600);
 
   setTimeout(() => {
     requestAnimationFrame(() => {
@@ -120,7 +120,7 @@ function fadingEngland() {
           price[i].classList.add('fade');
         }
     });
-  }, 300); 
+  }, 600); 
 }
 
 //EVENTS FOR BUTTONS
