@@ -5,26 +5,26 @@ function fadingGermany() {
   englandBtn.classList.remove('active');
 
   for(let i = 0; i < author.length; i++) {
+    painting[i].classList.add('invise');
     author[i].classList.add('invise');
     title[i].classList.add('invise');
     desc[i].classList.add('invise');
-    painting[i].classList.add('invise');
     price[i].classList.add('invise');
   }
 
   setTimeout(() => {
     requestAnimationFrame(() => {
+      painting.forEach((picture, l) => picture.src = germanyPainting[l]);
       author.forEach((auths, i) => auths.innerHTML = germanyAuthors[i]);
       title.forEach((titles, j) => titles.innerHTML = germanyTitles[j]);
       desc.forEach((descs, k) => descs.innerHTML = germanyDescs[k]);
-      painting.forEach((picture, l) => picture.src = germanyPainting[l]);
       price.forEach((prices, m) => prices.innerHTML = germanyPrices[m]);
             
         for(let i = 0; i < author.length; i++) {
+          painting[i].classList.remove('invise');
           author[i].classList.remove('invise');
           title[i].classList.remove('invise');
           desc[i].classList.remove('invise');
-          painting[i].classList.remove('invise');
           price[i].classList.remove('invise');
 
           author[i].classList.add('fade');
@@ -34,7 +34,7 @@ function fadingGermany() {
           price[i].classList.add('fade');
         }
     });
-  }, 400); 
+  }, 200); 
 }
 
 
@@ -45,26 +45,26 @@ function fadingFrance() {
   englandBtn.classList.remove('active');
 
   for(let i = 0; i < author.length; i++) {
+    painting[i].classList.add('invise');
     author[i].classList.add('invise');
     title[i].classList.add('invise');
     desc[i].classList.add('invise');
-    painting[i].classList.add('invise');
     price[i].classList.add('invise');
   }
 
   setTimeout(() => {
     requestAnimationFrame(() => {
+      painting.forEach((picture, l) => picture.src = francePainting[l]);
       author.forEach((auths, i) => auths.innerHTML = franceAuthors[i]);
       title.forEach((titles, j) => titles.innerHTML = franceTitles[j]);
       desc.forEach((descs, k) => descs.innerHTML = franceDescs[k]);
-      painting.forEach((picture, l) => picture.src = francePainting[l]);
       price.forEach((prices, m) => prices.innerHTML = francePrices[m]);
             
         for(let i = 0; i < author.length; i++) {
+          painting[i].classList.remove('invise');
           author[i].classList.remove('invise');
           title[i].classList.remove('invise');
           desc[i].classList.remove('invise');
-          painting[i].classList.remove('invise');
           price[i].classList.remove('invise');
 
           author[i].classList.add('fade');
@@ -74,7 +74,7 @@ function fadingFrance() {
           price[i].classList.add('fade');
         }
     });
-  }, 400); 
+  }, 200); 
 }
 
 
@@ -85,26 +85,26 @@ function fadingEngland() {
   franceBtn.classList.remove('active');
 
   for(let i = 0; i < author.length; i++) {
+    painting[i].classList.add('invise');
     author[i].classList.add('invise');
     title[i].classList.add('invise');
     desc[i].classList.add('invise');
-    painting[i].classList.add('invise');
     price[i].classList.add('invise');
   }
 
   setTimeout(() => {
     requestAnimationFrame(() => {
+      painting.forEach((picture, l) => picture.src = englandPainting[l]);
       author.forEach((auths, i) => auths.innerHTML = englandAuthors[i]);
       title.forEach((titles, j) => titles.innerHTML = englandTitles[j]);
       desc.forEach((descs, k) => descs.innerHTML = englandDescs[k]);
-      painting.forEach((picture, l) => picture.src = englandPainting[l]);
       price.forEach((prices, m) => prices.innerHTML = englandPrices[m]);
             
         for(let i = 0; i < author.length; i++) {
+          painting[i].classList.remove('invise');
           author[i].classList.remove('invise');
           title[i].classList.remove('invise');
           desc[i].classList.remove('invise');
-          painting[i].classList.remove('invise');
           price[i].classList.remove('invise');
 
           author[i].classList.add('fade');
@@ -114,7 +114,7 @@ function fadingEngland() {
           price[i].classList.add('fade');
         }
     });
-  }, 400); 
+  }, 200); 
 }
 
 //EVENTS FOR BUTTONS
