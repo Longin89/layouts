@@ -19,14 +19,18 @@ button:hover {
 
 .fade {
   opacity: 1;
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .invise {
   opacity: 0;
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .active {
