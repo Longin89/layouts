@@ -583,6 +583,7 @@
         flex-wrap: nowrap;
   }
   .footer__logo-tel {
+    font-size: 1.1rem;
     margin: 26px 1em;
   }
   .footer__logo-link {
