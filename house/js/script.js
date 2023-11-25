@@ -1,129 +1,55 @@
-//FADING FOR GERMANY BUTTON
-function fadingGermany() {
-  germanyBtn.classList.add('active');
-  franceBtn.classList.remove('active');
-  englandBtn.classList.remove('active');
+  //FADING FUNCTION
 
-  for(let i = 0; i < author.length; i++) {
-    painting[i].classList.add('invise');
-    author[i].classList.add('invise');
-    title[i].classList.add('invise');
-    desc[i].classList.add('invise');
-    price[i].classList.add('invise');
+function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, prices) {
+  buttOn.classList.add('active');
+  buttOff1.classList.remove('active');
+  buttOff2.classList.remove('active');
+
+  for(let i = 0; i < authorField.length; i++) {
+    paintingField[i].classList.add('invise');
+    authorField[i].classList.add('invise');
+    titleField[i].classList.add('invise');
+    descField[i].classList.add('invise');
+    priceField[i].classList.add('invise');
   }
 
   setTimeout(() => {
-    painting.forEach((picture, l) => picture.src = germanyPainting[l]);
-    author.forEach((auths, i) => auths.innerHTML = germanyAuthors[i]);
-    title.forEach((titles, j) => titles.innerHTML = germanyTitles[j]);
-    desc.forEach((descs, k) => descs.innerHTML = germanyDescs[k]);
-    price.forEach((prices, m) => prices.innerHTML = germanyPrices[m]);
+    paintingField.forEach((picture, l) => picture.src = painting[l]);
+    authorField.forEach((auths, i) => auths.innerHTML = authors[i]);
+    titleField.forEach((title, j) => title.innerHTML = titles[j]);
+    descField.forEach((desc, k) => desc.innerHTML = descs[k]);
+    priceField.forEach((price, m) => price.innerHTML = prices[m]);
   }, 500);
 
   setTimeout(() => {
     requestAnimationFrame(() => {         
-        for(let i = 0; i < author.length; i++) {
-          painting[i].src.onload = painting[i].classList.remove('invise');
-          author[i].classList.remove('invise');
-          title[i].classList.remove('invise');
-          desc[i].classList.remove('invise');
-          price[i].classList.remove('invise');
+        for(let i = 0; i < authorField.length; i++) {
+          paintingField[i].src.onload = paintingField[i].classList.remove('invise');
+          authorField[i].classList.remove('invise');
+          titleField[i].classList.remove('invise');
+          descField[i].classList.remove('invise');
+          priceField[i].classList.remove('invise');
 
-          author[i].classList.add('fade');
-          title[i].classList.add('fade');
-          desc[i].classList.add('fade');
-          painting[i].src.onload = painting[i].classList.add('fade');
-          price[i].classList.add('fade');
+          authorField[i].classList.add('fade');
+          titleField[i].classList.add('fade');
+          descField[i].classList.add('fade');
+          paintingField[i].src.onload = paintingField[i].classList.add('fade');
+          priceField[i].classList.add('fade');
         }
     });
-  }, 1000); 
+  }, 750);
 }
 
+  //EVENTS FOR BUTTONS
 
-//FADING FOR FRANCE BUTTON
-function fadingFrance() {
-  franceBtn.classList.add('active');
-  germanyBtn.classList.remove('active');
-  englandBtn.classList.remove('active');
+germanyBtn.addEventListener('click', function(){
+  toFade(germanyBtn, franceBtn, englandBtn, germanyPainting, germanyAuthors, germanyTitles, germanyDescs, germanyPrices);
+});
 
-  for(let i = 0; i < author.length; i++) {
-    painting[i].classList.add('invise');
-    author[i].classList.add('invise');
-    title[i].classList.add('invise');
-    desc[i].classList.add('invise');
-    price[i].classList.add('invise');
-  }
+franceBtn.addEventListener('click', function() {
+  toFade(franceBtn, germanyBtn, englandBtn, francePainting, franceAuthors, franceTitles, franceDescs, francePrices);
+});
 
-  setTimeout(() => {
-    painting.forEach((picture, l) => picture.src = francePainting[l]);
-    author.forEach((auths, i) => auths.innerHTML = franceAuthors[i]);
-    title.forEach((titles, j) => titles.innerHTML = franceTitles[j]);
-    desc.forEach((descs, k) => descs.innerHTML = franceDescs[k]);
-    price.forEach((prices, m) => prices.innerHTML = francePrices[m]);
-  }, 500);
-
-  setTimeout(() => {
-    requestAnimationFrame(() => {            
-        for(let i = 0; i < author.length; i++) {
-          painting[i].src.onload = painting[i].classList.remove('invise');
-          author[i].classList.remove('invise');
-          title[i].classList.remove('invise');
-          desc[i].classList.remove('invise');
-          price[i].classList.remove('invise');
-
-          author[i].classList.add('fade');
-          title[i].classList.add('fade');
-          desc[i].classList.add('fade');
-          painting[i].src.onload = painting[i].classList.add('fade');
-          price[i].classList.add('fade');
-        }
-    });
-  }, 1000); 
-}
-
-
-//FADING FOR ENGLAND BUTTON
-function fadingEngland() {
-  englandBtn.classList.add('active');
-  germanyBtn.classList.remove('active');
-  franceBtn.classList.remove('active');
-
-  for(let i = 0; i < author.length; i++) {
-    painting[i].classList.add('invise');
-    author[i].classList.add('invise');
-    title[i].classList.add('invise');
-    desc[i].classList.add('invise');
-    price[i].classList.add('invise');
-  }
-
-  setTimeout(() => {
-    painting.forEach((picture, l) => picture.src = englandPainting[l]);
-    author.forEach((auths, i) => auths.innerHTML = englandAuthors[i]);
-    title.forEach((titles, j) => titles.innerHTML = englandTitles[j]);
-    desc.forEach((descs, k) => descs.innerHTML = englandDescs[k]);
-    price.forEach((prices, m) => prices.innerHTML = englandPrices[m]);
-  }, 500);
-
-  setTimeout(() => {
-    requestAnimationFrame(() => {
-        for(let i = 0; i < author.length; i++) {
-          painting[i].src.onload = painting[i].classList.remove('invise');
-          author[i].classList.remove('invise');
-          title[i].classList.remove('invise');
-          desc[i].classList.remove('invise');
-          price[i].classList.remove('invise');
-
-          author[i].classList.add('fade');
-          title[i].classList.add('fade');
-          desc[i].classList.add('fade');
-          painting[i].src.onload = painting[i].classList.add('fade');
-          price[i].classList.add('fade');
-        }
-    });
-  }, 1000); 
-}
-
-//EVENTS FOR BUTTONS
-germanyBtn.addEventListener('click', fadingGermany);
-franceBtn.addEventListener('click', fadingFrance);
-englandBtn.addEventListener('click', fadingEngland);
+englandBtn.addEventListener('click', function() {
+  toFade(englandBtn, germanyBtn, franceBtn, englandPainting, englandAuthors, englandTitles, englandDescs, englandPrices);
+});

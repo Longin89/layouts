@@ -26,8 +26,8 @@ const germanyBtn = document.querySelector('.germany-button');
 
 
 //GRID FIELDS
-const author = document.querySelectorAll('.reproduction__grid-author');
-const title = document.querySelectorAll('.reproduction__grid-title');
-const desc = document.querySelectorAll('.reproduction__grid-desc');
-const painting = document.querySelectorAll('.painting');
-const price = document.querySelectorAll('.reproduction__grid-price');
+const authorField = document.querySelectorAll('.reproduction__grid-author');
+const titleField = document.querySelectorAll('.reproduction__grid-title');
+const descField = document.querySelectorAll('.reproduction__grid-desc');
+const paintingField = document.querySelectorAll('.painting');
+const priceField = document.querySelectorAll('.reproduction__grid-price');
