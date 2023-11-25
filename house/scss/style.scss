@@ -33,12 +33,14 @@ $dark-yellow: #D9B949;
 
  .fade {
    opacity: 1;
-   transition: opacity 250ms;
+   transition: opacity 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+   transition-delay: .1s;
  }
 
  .invise {
    opacity: 0;
-   transition: opacity 250ms;
+   transition: opacity 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+   transition-delay: .2s;
  }
 
  .active {
