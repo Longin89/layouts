@@ -19,7 +19,7 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
     titleField.forEach((title, j) => title.innerHTML = titles[j]);
     descField.forEach((desc, k) => desc.innerHTML = descs[k]);
     priceField.forEach((price, m) => price.innerHTML = prices[m]);
-  }, 500);
+  }, 50);
 
   setTimeout(() => {
     requestAnimationFrame(() => {         
@@ -30,14 +30,14 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
           descField[i].classList.remove('invise');
           priceField[i].classList.remove('invise');
 
+          paintingField[i].src.onload = paintingField[i].classList.add('fade');
           authorField[i].classList.add('fade');
           titleField[i].classList.add('fade');
           descField[i].classList.add('fade');
-          paintingField[i].src.onload = paintingField[i].classList.add('fade');
           priceField[i].classList.add('fade');
         }
     });
-  }, 750);
+  }, 500);
 }
 
   //EVENTS FOR BUTTONS
