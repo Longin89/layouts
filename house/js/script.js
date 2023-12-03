@@ -25,16 +25,16 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
     requestAnimationFrame(() => {         
         for(let i = 0; i < authorField.length; i++) {
           paintingField[i].src.onload = paintingField[i].classList.remove('invise');
-          authorField[i] = authorField[i].classList.remove('invise');
-          titleField[i] = titleField[i].classList.remove('invise');
-          descField[i] = descField[i].classList.remove('invise');
-          priceField[i] = priceField[i].classList.remove('invise');
+          authorField[i].classList.remove('invise');
+          titleField[i].classList.remove('invise');
+          descField[i].classList.remove('invise');
+          priceField[i].classList.remove('invise');
 
           paintingField[i].src.onload = paintingField[i].classList.add('fade');
-          authorField[i] = authorField[i].classList.add('fade');
-          titleField[i] = titleField[i].classList.add('fade');
-          descField[i] = descField[i].classList.add('fade');
-          priceField[i] = priceField[i].classList.add('fade');
+          authorField[i].classList.add('fade');
+          titleField[i].classList.add('fade');
+          descField[i].classList.add('fade');
+          priceField[i].classList.add('fade');
         }
     });
   }, 600);
