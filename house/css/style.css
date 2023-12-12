@@ -19,8 +19,8 @@ button:hover {
 
 .fade {
   opacity: 1;
-  -webkit-transition: opacity .7s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  transition: opacity .7s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -webkit-transition: opacity .8s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: opacity .8s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 
 }
 
