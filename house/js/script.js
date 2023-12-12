@@ -23,7 +23,7 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
 
   setTimeout(() => {         
         for(let i = 0; i < authorField.length; i++) {
-          paintingField[i].src.onload = paintingField[i].classList.remove('invise');
+          paintingField[i].classList.remove('invise');;
           authorField[i].classList.remove('invise');
           titleField[i].classList.remove('invise');
           descField[i].classList.remove('invise');
@@ -32,7 +32,7 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
   }, 1000)
 
   setTimeout(() => {
-    paintingField[i].src.onload = paintingField[i].classList.add('fade');
+    paintingField[i].classList.add('fade');
     authorField[i].classList.add('fade');
     titleField[i].classList.add('fade');
     descField[i].classList.add('fade');
