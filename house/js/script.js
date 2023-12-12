@@ -19,10 +19,9 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
     titleField.forEach((title, j) => title.innerHTML = titles[j]);
     descField.forEach((desc, k) => desc.innerHTML = descs[k]);
     priceField.forEach((price, m) => price.innerHTML = prices[m]);
-  }, 250);
+  }, 750);
 
-  setTimeout(() => {
-    requestAnimationFrame(() => {         
+  setTimeout(() => {         
         for(let i = 0; i < authorField.length; i++) {
           paintingField[i].src.onload = paintingField[i].classList.remove('invise');
           authorField[i].classList.remove('invise');
@@ -30,8 +29,7 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
           descField[i].classList.remove('invise');
           priceField[i].classList.remove('invise');
         }
-    });
-  }, 500);
+  }, 1000)
 
   setTimeout(() => {
     paintingField[i].src.onload = paintingField[i].classList.add('fade');
@@ -39,7 +37,7 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
     titleField[i].classList.add('fade');
     descField[i].classList.add('fade');
     priceField[i].classList.add('fade');
-  }, 750)
+  }, 1750)
 }
 
   //EVENTS FOR BUTTONS
