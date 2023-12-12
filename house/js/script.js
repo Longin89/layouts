@@ -14,11 +14,11 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
   }
 
   setTimeout(() => {
-    paintingField.forEach((picture, l) => picture.src.onload = painting[l]);
-    authorField.forEach((auths, i) => auths.innerHTML.onload = authors[i]);
-    titleField.forEach((title, j) => title.innerHTML.onload = titles[j]);
-    descField.forEach((desc, k) => desc.innerHTML.onload = descs[k]);
-    priceField.forEach((price, m) => price.innerHTML.onload = prices[m]);
+    paintingField.forEach((picture, l) => picture.src.onload = painting[l].onload);
+    authorField.forEach((auths, i) => auths.innerHTML.onload = authors[i].onload);
+    titleField.forEach((title, j) => title.innerHTML.onload = titles[j].onload);
+    descField.forEach((desc, k) => desc.innerHTML.onload = descs[k].onload);
+    priceField.forEach((price, m) => price.innerHTML.onload = prices[m].onload);
   }, 750);
 
 
@@ -37,11 +37,11 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
 
   setTimeout(() => {
         for(let i = 0; i < authorField.length; i++) {
-          paintingField[i].onload = paintingField[i].classList.add('fade');
-          authorField[i].onload = authorField[i].classList.add('fade');
-          titleField[i].onload = titleField[i].classList.add('fade');
-          descField[i].onload = descField[i].classList.add('fade');
-          priceField[i].onload = priceField[i].classList.add('fade');
+          paintingField[i].classList.add('fade');
+          authorField[i].classList.add('fade');
+          titleField[i].classList.add('fade');
+          descField[i].classList.add('fade');
+          priceField[i].classList.add('fade');
         }
   }, 2500)
 }
