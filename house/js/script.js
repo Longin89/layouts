@@ -23,7 +23,7 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
 
   setTimeout(() => {         
         for(let i = 0; i < authorField.length; i++) {
-          paintingField[i].classList.remove('invise');;
+          paintingField[i].onload = paintingField[i].classList.remove('invise');
           authorField[i].classList.remove('invise');
           titleField[i].classList.remove('invise');
           descField[i].classList.remove('invise');
@@ -33,13 +33,13 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
 
   setTimeout(() => {
         for(let i = 0; i < authorField.length; i++) {
-          paintingField[i].classList.add('fade');
+          paintingField[i].onload = paintingField[i].classList.add('fade');
           authorField[i].classList.add('fade');
           titleField[i].classList.add('fade');
           descField[i].classList.add('fade');
           priceField[i].classList.add('fade');
         }
-  }, 1750)
+  }, 1800)
 }
 
   //EVENTS FOR BUTTONS
