@@ -32,11 +32,13 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
   }, 1000)
 
   setTimeout(() => {
-    paintingField[i].classList.add('fade');
-    authorField[i].classList.add('fade');
-    titleField[i].classList.add('fade');
-    descField[i].classList.add('fade');
-    priceField[i].classList.add('fade');
+        for(let i = 0; i < authorField.length; i++) {
+          paintingField[i].classList.add('fade');
+          authorField[i].classList.add('fade');
+          titleField[i].classList.add('fade');
+          descField[i].classList.add('fade');
+          priceField[i].classList.add('fade');
+        }
   }, 1750)
 }
 
