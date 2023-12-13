@@ -48,6 +48,10 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
 
   //EVENTS FOR BUTTONS
 
+  window.addEventListener('load', function() {
+    toFade(franceBtn, germanyBtn, englandBtn, francePainting, franceAuthors, franceTitles, franceDescs, francePrices);
+  });
+
 germanyBtn.addEventListener('click', function(){
   toFade(germanyBtn, franceBtn, englandBtn, germanyPainting, germanyAuthors, germanyTitles, germanyDescs, germanyPrices);
 });
