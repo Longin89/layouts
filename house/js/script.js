@@ -31,7 +31,7 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
         descField[i].classList.remove('invise');
         priceField[i].classList.remove('invise');
       }
-}, 1000)
+}, 850)
 
 
 
@@ -43,7 +43,7 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
           descField[i].classList.add('fade');
           priceField[i].classList.add('fade');
         }
-  }, 950)
+  }, 850)
 }
 
   //EVENTS FOR BUTTONS
