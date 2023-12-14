@@ -20,16 +20,16 @@ button:hover {
 .fade {
   opacity: 1;
 
-  transition-delay: .3s;
-  transition-duration: .6s;
+  transition-delay: .5s;
+  transition-duration: .5s;
 
 }
 
 .invise {
   opacity: 0;
 
-  transition-delay: .3s;
-  transition-duration: .6s;
+  transition-delay: .5s;
+  transition-duration: .5s;
 
 }
 
