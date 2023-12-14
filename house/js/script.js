@@ -43,12 +43,12 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
           descField[i].classList.add('fade');
           priceField[i].classList.add('fade');
         }
-  }, 3000)
+  }, 1000)
 }
 
   //EVENTS FOR BUTTONS
 
-  window.addEventListener('load', function() {
+  document.addEventListener('onload', function() {
     toFade(franceBtn, germanyBtn, englandBtn, francePainting, franceAuthors, franceTitles, franceDescs, francePrices);
   });
 
