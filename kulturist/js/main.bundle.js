@@ -1,8 +1,10 @@
 //YandexMaps on main
+var map = document.getElementById("map");
+if(map) {
     function init(){
         const map = new ymaps.Map("map", {
             center: [53.64865063717227,55.939788059524524],
-            zoom: 15
+            zoom: 16
         });
 
         const placemark = new ymaps.Placemark([53.64865063717227,55.939788059524524], {}, {
@@ -18,5 +20,6 @@
         map.geoObjects.add(placemark);
     }
     ymaps.ready(init);
+}
 
 //import * as bootstrap from 'bootstrap';
