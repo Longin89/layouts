@@ -4255,7 +4255,17 @@ h6 {
   font-family: "TildaSans";
   font-style: normal;
   line-height: 130%;
-  display: block;
+  width: intrinsic;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.footer__content-mail:hover {
+  color: #7b7b7b;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .footer__content-tel {
@@ -4265,7 +4275,17 @@ h6 {
   font-family: "TildaSans";
   font-style: normal;
   line-height: 130%;
-  display: block;
+  width: intrinsic;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.footer__content-tel:hover {
+  color: #7b7b7b;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .footer__content-button {
@@ -4299,6 +4319,13 @@ h6 {
   transition: 0.2s;
 }
 
+.footer__list-item {
+  margin-bottom: 0.5em;
+}
+.footer__list-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 .footer__item-link {
   color: #7b7b7b;
   font-weight: 400;
@@ -4306,6 +4333,13 @@ h6 {
   font-family: "TildaSans";
   font-style: normal;
   line-height: 130%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.footer__item-link:hover {
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 html {
@@ -5028,5 +5062,59 @@ main {
   font-style: normal;
   line-height: 130%;
   padding: 0.3em 0;
+}
+
+.about__bio-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 4.5em;
+  -moz-column-gap: 4.5em;
+  column-gap: 4.5em;
+}
+
+.about__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 27%;
+  flex: 0 1 27%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about__list-title {
+  color: #000;
+  font-weight: 600;
+  font-size: 3rem;
+  font-family: "TildaSans";
+  font-style: normal;
+  line-height: 140%;
+  padding-bottom: 0.25em 0;
+}
+
+.about__list-position {
+  color: #7b7b7b;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "TildaSans";
+  font-style: normal;
+  line-height: 140%;
+  padding-top: 0.25em 0;
+  text-transform: uppercase;
+}
+
+.about__list-edu {
+  color: #000;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "TildaSans";
+  font-style: normal;
+  line-height: 140%;
+  padding-top: 0.25em;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.min.css.map */
