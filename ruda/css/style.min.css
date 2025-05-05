@@ -4200,11 +4200,13 @@ h6 {
   height: 40px;
   text-transform: uppercase;
   background-color: transparent;
+  border: 1px solid #000;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .header__button:hover {
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -4246,6 +4248,8 @@ h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   row-gap: 2em;
 }
 
@@ -4301,8 +4305,8 @@ h6 {
 
 .footer__content-button {
   color: #e7e7e7;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.87rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 130%;
@@ -4315,7 +4319,11 @@ h6 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 637px;
+  height: 55px;
   padding: 0.5em 1.5em;
   text-transform: uppercase;
   background-color: transparent;
@@ -4325,7 +4333,7 @@ h6 {
 }
 .footer__content-button:hover {
   color: #000;
-  background-color: #fff;
+  background-color: #e7e7e7;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -4398,7 +4406,7 @@ ul {
 }
 
 .container {
-  max-width: 1640px;
+  max-width: 1775px;
   margin: 0 auto;
   padding-right: 10px !important;
   padding-left: 10px !important;
@@ -4513,9 +4521,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .architect__list-item {
@@ -4528,7 +4536,7 @@ main {
 .architect__item-desc {
   color: #000;
   font-weight: 600;
-  font-size: 5.4rem;
+  font-size: 6.25rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 140%;
@@ -4552,7 +4560,7 @@ main {
   align-items: center;
   width: 20px;
   height: 20px;
-  margin: 0 16px;
+  margin: 0 16px 0 0;
   background-color: #000;
   border-radius: 50%;
   content: "";
@@ -4561,7 +4569,7 @@ main {
 .architect__desc {
   color: #7d7f81;
   font-weight: 600;
-  font-size: 5.4rem;
+  font-size: 6.25rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 140%;
@@ -4627,7 +4635,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 503px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 23%;
+  flex: 1 1 23%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #e7e7e7;
 }
 
@@ -4673,11 +4686,11 @@ main {
 
 .portfolio__desc-subtitle {
   color: #000;
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.25rem;
   font-family: "TildaSans";
   font-style: normal;
-  line-height: 20px;
+  line-height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4697,20 +4710,23 @@ main {
 
 .portfolio__desc-link {
   color: #000;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 1.25rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 20px;
+  width: 240px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 1em 0;
   padding: 0.5em 1em;
   text-transform: uppercase;
   background-color: transparent;
@@ -4719,7 +4735,8 @@ main {
   transition: 0.2s;
 }
 .portfolio__desc-link:hover {
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -4745,10 +4762,6 @@ main {
   padding-top: 7.5em;
   padding-bottom: 7.5em;
   background-color: #e7e7e7;
-}
-
-.services__container {
-  padding: 0 2em !important;
 }
 
 .services__list-item {
@@ -4813,10 +4826,10 @@ main {
 .services__desc-subtitle {
   color: #e7e7e7;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "TildaSans";
   font-style: normal;
-  line-height: 20px;
+  line-height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4835,7 +4848,7 @@ main {
 .services__desc-link {
   color: #e7e7e7;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 130%;
@@ -4974,7 +4987,7 @@ main {
 .services__list-details span {
   color: #7b7b7b;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 130%;
@@ -5028,16 +5041,16 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-  row-gap: 10em;
+  -webkit-column-gap: 4em;
+  -moz-column-gap: 4em;
+  column-gap: 4em;
+  row-gap: 5em;
 }
 
 .wework__list-item {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 475px;
-  flex: 1 1 475px;
+  -ms-flex: 1 1 400px;
+  flex: 1 1 400px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -5050,11 +5063,12 @@ main {
 .wework__item-title {
   color: #000;
   font-weight: 500;
-  font-size: 3.75rem;
+  font-size: 3.43rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 130%;
-  padding: 0.25em 0;
+  width: 50%;
+  padding: 0 0 0.25em;
   text-transform: uppercase;
 }
 
@@ -5068,14 +5082,14 @@ main {
   text-transform: uppercase;
 }
 
+.wework__img {
+  width: 40%;
+}
+
 .about {
   padding-top: 7.5em;
   padding-bottom: 7.5em;
   background-color: #e7e7e7;
-}
-
-.about__container {
-  padding: 0 2em !important;
 }
 
 .about__us {
@@ -5087,7 +5101,7 @@ main {
   column-gap: 3em;
 }
 .about__us img {
-  max-width: 880px;
+  max-width: 1060px;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -5100,6 +5114,8 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .about__us-title {
@@ -5109,12 +5125,13 @@ main {
   font-family: "TildaSans";
   font-style: normal;
   line-height: 130%;
+  text-transform: uppercase;
 }
 
 .about__us-subtitle {
   color: #222427;
-  font-weight: 300;
-  font-size: 2.18rem;
+  font-weight: 400;
+  font-size: 1.87rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 130%;
@@ -5136,8 +5153,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 27%;
-  flex: 0 1 27%;
+  -ms-flex: 0 1 31%;
+  flex: 0 1 31%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -5146,29 +5163,29 @@ main {
 
 .about__list-title {
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 3.75rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 140%;
-  padding: 50px 0 0 0;
+  padding: 50px 0 0;
 }
 
 .about__list-position {
   color: #7b7b7b;
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.25rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 140%;
-  padding-top: 0.25em 0;
+  padding: 0.25em 0;
   text-transform: uppercase;
 }
 
 .about__list-edu {
   color: #000;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: "TildaSans";
   font-style: normal;
   line-height: 140%;
