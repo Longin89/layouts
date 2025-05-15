@@ -5,14 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="preload" href="./fonts/Inter-ExtraBold.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="./fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="./fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="./fonts/Poppins-ExtraBold.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="./fonts/Poppins-Light.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="./fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="./fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="./fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/TheCrewPro.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/Lordcorps.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/HandveticaNeue.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="css/style.min.css" />
   <script defer src="js/main.bundle.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=31830af7-45e9-48ad-9f63-c4d696b5808f&lang=ru"></script>
@@ -39,10 +36,35 @@
                 </a>
             </div>
             <nav class="header__nav">
+                <div class="header__nav-burger burger-button">
+                    <span class="header__burger-line burger-top"></span>
+                    <span class="header__burger-line burger-middle"></span>
+                    <span class="header__burger-line burger-bottom"></span>
+                </div>
+                <ul class="header__burger-list burger-menu">
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="prices.html">Цены</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="schedule.html">Расписание занятий</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="about.html">О клубе</a>
+                    </li>
+                </ul>
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a href="about.html" class="header__nav-link">
-                            О клубе
+                        <a href="index.html" class="header__nav-link">
+                            Главная
                         </a>
                     </li>
                     <li class="header__nav-item">
@@ -65,6 +87,11 @@
                             Контакты
                         </a>
                     </li>
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">
+                            О клубе
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <ul class="header__contacts">
@@ -74,7 +101,8 @@
                     </a>
                 </li>
                 <li class="header__contacts-item">
-                    <a href="https://vk.com/kulturiststr" class="header__contacts-link" target="_blank" title="ВКонтакте">
+                    <a href="https://vk.com/kulturiststr" class="header__contacts-link" target="_blank"
+                        title="ВКонтакте">
                         <img src="images/vk.webp" alt="vk">
                     </a>
                 </li>
@@ -142,8 +170,8 @@
       </h2>
       <ul class="footer__nav-list">
         <li class="footer__list-item">
-          <a href="about.html" class="footer__item-link">
-            О клубе
+          <a href="index.html" class="footer__item-link">
+            Главная
           </a>
         </li>
         <li class="footer__list-item">
@@ -164,6 +192,11 @@
         <li class="footer__list-item">
           <a href="contacts.html" class="footer__item-link">
             Контакты
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="about.html" class="footer__item-link">
+            О клубе
           </a>
         </li>
       </ul>
@@ -201,24 +234,16 @@
       </h2>
       <ul class="footer__worktime-list">
         <li class="footer__worktime-item">
-          <p class="footer__worktime-subtitle">
-            Пн. - чт.: 08:00 - 22:00
-          </p>
+          Пн. - чт.: 08:00 - 22:00
         </li>
         <li class="footer__worktime-item">
-          <p class="footer__worktime-subtitle">
-            Пт.: 07:00 - 20:00
-          </p>
+          Пт.: 07:00 - 20:00
         </li>
         <li class="footer__worktime-item">
-          <p class="footer__worktime-subtitle">
-            Сб.: 14:00 - 20:00
-          </p>
+          Сб.: 14:00 - 20:00
         </li>
         <li class="footer__worktime-item">
-          <p class="footer__worktime-subtitle">
-            Вс.: выходной
-          </p>
+          Вс.: выходной
         </li>
       </ul>
     </div>
@@ -226,15 +251,17 @@
       <h2 class="footer__address-title">
         Как нас найти
       </h2>
-      <p class="footer__address-subtitle">
-        Республика Башкортостан
-      </p>
-      <p class="footer__address-subtitle">
-        г. Стерлитамак
-      </p>
-      <p class="footer__address-subtitle">
-        Ул. Дружбы 3, цокольный этаж
-      </p>
+      <ul class="footer__address-list">
+        <li class="footer__address-item">
+          Республика Башкортостан
+        </li>
+        <li class="footer__address-item">
+          г. Стерлитамак
+        </li>
+        <li class="footer__address-item">
+          Ул. Дружбы 3, цокольный этаж
+        </li>
+      </ul>
     </div>
   </div>
 </footer>
