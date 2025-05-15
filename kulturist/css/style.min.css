@@ -430,21 +430,32 @@ h6 {
   column-gap: 4em;
 }
 
-.header__nav-link {
+.header__nav-link,
+.header__burger-link {
   color: #ff7846;
   font-weight: 700;
   font-size: 1.25rem;
-  font-family: "Poppins-Bold";
+  font-family: "TheCrewPro";
   font-style: normal;
   line-height: 100%;
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
-.header__nav-link:hover {
-  color: #fff;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+.header__nav-link:hover,
+.header__burger-link:hover {
+  color: lightgray;
+}
+
+.header__burger-link {
+  color: #ff7846;
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: "TheCrewPro";
+  font-style: normal;
+  line-height: 100%;
+}
+
+.active {
+  color: #fff !important;
 }
 
 .header__contacts {
@@ -470,6 +481,90 @@ h6 {
   transition: 0.2s;
 }
 
+.burger-button {
+  display: none;
+  position: fixed;
+  right: 2vh;
+  z-index: 9;
+  padding: 8px;
+}
+.burger-button span {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 22px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.burger-button.active span {
+  background-color: #fff;
+}
+.burger-button.active .burger-top {
+  position: absolute;
+  top: 8px;
+  -webkit-transform: rotateZ(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotateZ(45deg);
+}
+.burger-button.active .burger-middle {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.burger-button.active .burger-bottom {
+  position: absolute;
+  bottom: 8px;
+  -webkit-transform: rotateZ(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.burger-top, .burger-bottom {
+  position: absolute;
+}
+
+.burger-top {
+  top: -2px;
+}
+
+.burger-bottom {
+  bottom: -2px;
+}
+
+.burger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0vh;
+  left: 100vw;
+  right: -100vw;
+  bottom: 0vh;
+  background-color: black;
+  padding: 5px;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  z-index: 8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.burger-menu.active {
+  left: 0vw;
+  right: 0;
+  opacity: 0.97;
+}
+
 /*  FOOTER STYLES WILL BE HERE  */
 .footer {
   background: -webkit-gradient(linear, left top, right top, from(#090f30), color-stop(#000000), to(#190631));
@@ -486,14 +581,14 @@ h6 {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 1.5em 0 0 0 !important;
+  padding-top: 1.5em !important;
 }
 
 .footer__nav-title {
   color: #f0f0f0;
   font-weight: 400;
   font-size: 1.25rem;
-  font-family: "Inter-Regular";
+  font-family: "HandveticaNeue";
   font-style: normal;
   line-height: 91%;
   padding: 0 0 0.5em 0;
@@ -507,8 +602,8 @@ h6 {
 .footer__item-link {
   color: #ff7846;
   font-weight: 400;
-  font-size: 1rem;
-  font-family: "Inter-Regular";
+  font-size: 1.25rem;
+  font-family: "TheCrewPro";
   font-style: normal;
   line-height: 62%;
   cursor: pointer;
@@ -525,9 +620,9 @@ h6 {
   color: #f0f0f0;
   font-weight: 400;
   font-size: 1.25rem;
-  font-family: "Inter-Regular";
+  font-family: "HandveticaNeue";
   font-style: normal;
-  line-height: 91%;
+  line-height: 100%;
   padding: 0 0 0.5em 0;
   text-transform: uppercase;
 }
@@ -543,7 +638,7 @@ h6 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-height: 130px;
+  max-height: 140px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
@@ -569,45 +664,33 @@ h6 {
   color: #f0f0f0;
   font-weight: 400;
   font-size: 1.25rem;
-  font-family: "Inter-Regular";
+  font-family: "HandveticaNeue";
   font-style: normal;
-  line-height: 91%;
+  line-height: 100%;
   padding: 0 0 0.5em 0;
   text-transform: uppercase;
 }
 
-.footer__worktime-item {
-  margin: 1.5em 0;
-}
-
-.footer__worktime-subtitle {
+.footer__worktime-item,
+.footer__address-item {
   color: #f0f0f0;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   font-family: "Inter-Regular";
   font-style: normal;
-  line-height: 62%;
+  line-height: 100%;
+  margin: 1em 0;
 }
 
 .footer__address-title {
   color: #f0f0f0;
   font-weight: 500;
   font-size: 1.25rem;
-  font-family: "Inter-Regular";
+  font-family: "HandveticaNeue";
   font-style: normal;
-  line-height: 91%;
+  line-height: 100%;
   padding: 0 0 0.5em 0;
   text-transform: uppercase;
-}
-
-.footer__address-subtitle {
-  color: #f0f0f0;
-  font-weight: 500;
-  font-size: 1rem;
-  font-family: "Inter-Regular";
-  font-style: normal;
-  line-height: 91%;
-  margin: 1.5em 0;
 }
 
 html {
@@ -689,13 +772,6 @@ main {
 }
 
 @font-face {
-  font-weight: 800;
-  font-family: "Inter-ExtraBold";
-  font-style: normal;
-  src: url("../fonts/../fonts/Inter-ExtraBold.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
   font-weight: 400;
   font-family: "Inter-Regular";
   font-style: normal;
@@ -710,41 +786,168 @@ main {
   font-display: swap;
 }
 @font-face {
-  font-weight: 800;
-  font-family: "Poppins-ExtraBold";
+  font-weight: 500;
+  font-family: "TheCrewPro";
   font-style: normal;
-  src: url("../fonts/../fonts/Poppins-ExtraBold.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-weight: 200;
-  font-family: "Poppins-Light";
-  font-style: normal;
-  src: url("../fonts/../fonts/Poppins-Light.woff2") format("woff2");
+  src: url("../fonts/../fonts/TheCrewPro.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-weight: 500;
-  font-family: "Poppins-Medium";
+  font-family: "Lordcorps";
   font-style: normal;
-  src: url("../fonts/../fonts/Poppins-Medium.woff2") format("woff2");
+  src: url("../fonts/../fonts/Lordcorps.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-weight: 400;
-  font-family: "Poppins-Regular";
+  font-weight: 500;
+  font-family: "HandveticaNeue";
   font-style: normal;
-  src: url("../fonts/../fonts/Poppins-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-weight: 600;
-  font-family: "Poppins-SemiBold";
-  font-style: normal;
-  src: url("../fonts/../fonts/Poppins-SemiBold.woff2") format("woff2");
+  src: url("../fonts/../fonts/HandveticaNeue.woff2") format("woff2");
   font-display: swap;
 }
 /*  MEDIA STYLES WILL BE HERE  */
+@media (max-width: 1399px) {
+  .header__contacts {
+    display: none;
+  }
+  .header__container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1280px) {
+  .header__container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1280px) {
+  .header__container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1200px) {
+  .header__container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .header__nav-list {
+    -webkit-column-gap: 2.5em;
+    -moz-column-gap: 2.5em;
+    column-gap: 2.5em;
+  }
+  .mission__subtitle {
+    max-width: 75% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .burger-button {
+    display: block;
+  }
+  .header__nav-list {
+    display: none;
+  }
+  .header__container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .page {
+    font-size: 14px;
+  }
+  .prev,
+  .next {
+    margin-top: 0.3em !important;
+  }
+}
+@media (max-width: 911px) {
+  .motivation__picture {
+    padding: 0 !important;
+  }
+  .motivation__container {
+    min-height: calc(92vh - 104px) !important;
+  }
+  .motivation__desc {
+    text-align: center;
+    row-gap: 3em !important;
+  }
+}
+@media (max-width: 768px) {
+  .motivation__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .motivation__desc {
+    row-gap: 2em !important;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .path__title,
+  .mission__title,
+  .coaches__title,
+  .gallery__title {
+    padding: 2em 0 0.5em 0 !important;
+  }
+  .mission,
+  .path,
+  .coaches {
+    padding: 0 !important;
+  }
+  .path__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 2em;
+  }
+  .gallery {
+    padding: 0 0 70px 0 !important;
+  }
+  .footer__container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-column-gap: 12px !important;
+    -moz-column-gap: 12px !important;
+    column-gap: 12px !important;
+    row-gap: 2em;
+    text-align: center;
+  }
+}
+@media (max-width: 542px) {
+  .footer__nav {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .footer__contacts {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .footer__contacts-list {
+    max-height: 130px;
+  }
+  .footer__nav,
+  .footer__contacts,
+  .footer__worktime,
+  .footer__address {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .page {
+    font-size: 13px;
+  }
+  .motivation__desc-title {
+    font-size: 4.5rem !important;
+  }
+}
 .motivation {
   background: -webkit-gradient(linear, left top, right top, from(#090f30), color-stop(#000000), to(#190631));
   background: linear-gradient(90deg, #090f30, #000000, #190631);
@@ -763,6 +966,7 @@ main {
 }
 
 .motivation__desc {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,8 +983,8 @@ main {
 .motivation__desc-title {
   color: #f0f0f0;
   font-weight: 500;
-  font-size: 4rem;
-  font-family: "Poppins-Medium";
+  font-size: 5rem;
+  font-family: "Lordcorps";
   font-style: normal;
   line-height: 91%;
   text-transform: uppercase;
@@ -799,8 +1003,8 @@ main {
 .motivation-desc-consultation {
   color: #fff;
   font-weight: 700;
-  font-size: 1.25rem;
-  font-family: "Poppins-ExtraBold";
+  font-size: 1.5rem;
+  font-family: "TheCrewPro";
   font-style: normal;
   line-height: 170%;
   letter-spacing: 0.1em;
@@ -815,11 +1019,13 @@ main {
   -ms-flex-align: center;
   align-items: center;
   background-color: #f54e4e;
-  width: 578px;
+  width: 100%;
   height: 71px;
   border: 4px solid #f54e4e;
   border-radius: 40px;
+  margin: 0 auto;
   padding: 15px 25px;
+  text-align: center;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -845,7 +1051,7 @@ main {
   color: #f0f0f0;
   font-weight: 400;
   font-size: 1.5rem;
-  font-family: "Poppins-Regular";
+  font-family: "Inter-Regular";
   font-style: normal;
   line-height: 170%;
   max-width: 50%;
@@ -869,12 +1075,12 @@ main {
 
 .coaches__title {
   color: #f0f0f0;
-  font-weight: 600;
-  font-size: 2.25rem;
-  font-family: "Poppins-Bold";
+  font-weight: 500;
+  font-size: 2.5rem;
+  font-family: "HandveticaNeue";
   font-style: normal;
   line-height: 170%;
-  padding: 1em 0;
+  padding: 0.5em 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -887,6 +1093,10 @@ main {
   justify-content: space-around;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-column-gap: 12px;
+  -moz-column-gap: 12px;
+  column-gap: 12px;
+  row-gap: 2em;
 }
 
 .coaches__list-item img {
@@ -917,9 +1127,9 @@ main {
 
 .coaches__link-title {
   color: #f0f0f0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.5rem;
-  font-family: "Poppins-Bold";
+  font-family: "TheCrewPro";
   font-style: normal;
   line-height: 170%;
   text-align: center;
@@ -931,7 +1141,7 @@ main {
   color: #f0f0f0;
   font-weight: 400;
   font-size: 1rem;
-  font-family: "Poppins-Regular";
+  font-family: "Inter-Regular";
   font-style: normal;
   line-height: 170%;
 }
@@ -945,12 +1155,12 @@ main {
 .path__title,
 .mission__title {
   color: #f0f0f0;
-  font-weight: 600;
-  font-size: 2.25rem;
-  font-family: "Poppins-Bold";
+  font-weight: 500;
+  font-size: 2.5rem;
+  font-family: "HandveticaNeue";
   font-style: normal;
   line-height: 170%;
-  padding: 1em 0;
+  padding: 0.5em 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -962,9 +1172,9 @@ main {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-column-gap: 100px;
-  -moz-column-gap: 100px;
-  column-gap: 100px;
+  -webkit-column-gap: 5em;
+  -moz-column-gap: 5em;
+  column-gap: 5em;
 }
 
 .path__list-item {
@@ -991,9 +1201,9 @@ main {
 
 .path__item-title {
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.25rem;
-  font-family: "Poppins-Bold";
+  font-family: "TheCrewPro";
   font-style: normal;
   line-height: 170%;
 }
@@ -1006,12 +1216,12 @@ main {
 
 .gallery__title {
   color: #f0f0f0;
-  font-weight: 600;
-  font-size: 2.25rem;
-  font-family: "Poppins-Bold";
+  font-weight: 500;
+  font-size: 2.5rem;
+  font-family: "HandveticaNeue";
   font-style: normal;
   line-height: 170%;
-  padding: 1em 0;
+  padding: 0.5em 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1029,17 +1239,20 @@ main {
   cursor: pointer;
 }
 
+.gallery__arrow-wrapper {
+  position: relative;
+}
+
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
   width: auto;
-  padding: 16px;
-  margin-top: -50px;
+  padding: 0.5em;
+  margin-top: -20em;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   border-radius: 25%;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1067,10 +1280,18 @@ main {
   padding: 0;
 }
 
+.gallery__wrapper-desc {
+  color: #f0f0f0;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Inter-Regular";
+  font-style: normal;
+  line-height: 170%;
+  margin: 1em auto;
+}
+
 .caption-container {
   text-align: center;
-  padding: 2px 16px;
-  color: white;
 }
 
 .gallery__row:after {
@@ -1138,7 +1359,7 @@ main {
 @media screen and (max-width: 699px) {
   .coaches__modal-wrapper,
   .path__modal-wrapper {
-    margin: 2rem;
+    margin: 6rem auto;
   }
 }
 @media screen and (min-width: 700px) {
@@ -1170,7 +1391,7 @@ main {
   color: #000;
   font-weight: 600;
   font-size: 2rem;
-  font-family: "Poppins-Bold";
+  font-family: "Inter-Regular";
   font-style: normal;
   line-height: 170%;
   margin: 0 0 1rem;
@@ -1179,7 +1400,14 @@ main {
 
 .coaches__modal-subtitle,
 .path__modal-subtitle {
+  color: #000;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Inter-Regular";
+  font-style: normal;
+  line-height: 170%;
   margin: 1em;
+  text-align: center;
 }
 
 .success {
@@ -1205,9 +1433,9 @@ main {
 
 .contacts__title {
   color: #f0f0f0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.25rem;
-  font-family: "Poppins-Bold";
+  font-family: "HandveticaNeue";
   font-style: normal;
   line-height: 170%;
   width: 100%;
@@ -1247,9 +1475,9 @@ main {
 .schedule__title,
 .prices__title {
   color: #f0f0f0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.25rem;
-  font-family: "Poppins-Bold";
+  font-family: "HandveticaNeue";
   font-style: normal;
   line-height: 170%;
   width: 100%;
@@ -1284,9 +1512,9 @@ main {
 .schedule__row-item,
 .prices__row-item {
   color: #f0f0f0;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 1.25rem;
-  font-family: "Poppins-ExtraBold";
+  font-family: "TheCrewPro";
   font-style: normal;
   line-height: 170%;
   text-align: center;
@@ -1360,15 +1588,15 @@ main {
 .news__container img {
   display: block;
   margin: 0 auto;
-  padding: 0 0 2.25em 0;
+  padding: 0 0 1.25em 0;
 }
 
 .about__title,
 .news__title {
   color: #f0f0f0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.25rem;
-  font-family: "Poppins-Bold";
+  font-family: "HandveticaNeue";
   font-style: normal;
   line-height: 170%;
   width: 100%;
@@ -1385,6 +1613,7 @@ main {
   font-family: "Inter-Regular";
   font-style: normal;
   line-height: 170%;
-  padding: 0 0 0.75em 0;
+  padding: 1em 0;
   text-align: center;
 }
+/*# sourceMappingURL=style.min.css.map */

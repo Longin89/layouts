@@ -1,17 +1,3 @@
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-(() => {
-/*!************************************!*\
-  !*** ./dev/js/components/_vars.js ***!
-  \************************************/
-
-})();
-
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-(() => {
-/*!*****************************************!*\
-  !*** ./dev/js/components/_functions.js ***!
-  \*****************************************/
 //YandexMaps on main
 var map = document.getElementById("map");
 if(map) {
@@ -66,15 +52,3 @@ window.addEventListener("resize", (function() {
 ));
 
 burgerButton.addEventListener("click", toggleBurger);
-})();
-
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-(() => {
-/*!***********************************!*\
-  !*** ./dev/js/components/main.js ***!
-  \***********************************/
-
-})();
-
-
-//# sourceMappingURL=main.bundle.js.map
