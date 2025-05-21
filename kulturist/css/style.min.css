@@ -1372,6 +1372,9 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contacts__title {
@@ -1587,8 +1590,8 @@ main {
 .prices__table,
 .schedule__table {
   margin: auto;
-  min-width: 75%;
-  max-width: 100%;
+  min-width: 80%;
+  border-collapse: collapse;
   color: #333;
   overflow: hidden;
 }
