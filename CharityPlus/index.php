@@ -1,0 +1,896 @@
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * For example, it puts together the home page when no home.php file exists.
+ *
+ * @link http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package spyropress
+ * @subpackage spyropress
+ * @since 1.0.0
+ */
+ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home 1 - CharityPlus - Multipurpose Nonprofit Charity Organization HTML5 Template</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icon-logo.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body class="home1">
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 content-inner">
+					<div class="logo">
+						<a href=""><img src="images/logo.png" alt=""></a>
+					</div>
+					<div class="main_menu">
+						<a id="setting"><i class="fa fa-bars fa-2x"></i></a>
+						<ul class="menu">
+							<li style="margin-bottom: 30px; border-bottom: none;"><a id="close"><i class="fa fa-times"></i></a></li>
+							<li>
+								<a href="">Home<span id="sub_1" class="icaret nav-plus fa fa-angle-down"></span></a>
+								<ul class="sub_menu sub1">
+									<li><a href="">Home 1</a></li>
+									<li><a href="pages/home/home-2.html">Home 2</a></li>
+									<li><a href="pages/home/home-3.html">Home 3</a></li>
+									<li><a href="pages/home/home-4.html">Home 4</a></li>
+									<li><a href="pages/home/home-5.html">Home 5</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="pages/campaigns/campaigns.html">Campaigns<span id="sub_2" class="icaret nav-plus fa fa-angle-down"></span></a>
+								<ul class="sub_menu sub2">
+									<li><a href="pages/campaigns/campaigns.html">Campaigns Grid</a></li>
+									<li><a href="pages/campaigns/campaigns-list.html">Campaigns List</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="pages/event/event.html">Events</a>
+							</li>
+							<li>
+								<a href="#">Page<span id="sub_5" class="icaret nav-plus fa fa-angle-down"></span></a>
+								<ul class="sub_menu sub5">
+									<li class="menu-item">
+										<a href="">Features</a>
+										<ul class="sub4_menu">
+											<li><a href="pages/about/about-us.html">About</a></li>
+											<li><a href="pages/about/contact.html">Contact</a></li>
+											<li><a href="pages/campaigns/campaigns.html">Our Mission</a></li>
+											<li><a href="pages/our-team/our-team.html">Team Page</a></li>
+											<li><a href="pages/careers/careers.html">Careers</a></li>
+											<li><a href="pages/gallery/gallery.html">Gallery</a></li>
+											<li><a href="pages/about/page-404.html">404 Page</a></li>
+										</ul>
+									</li>
+									<li class="menu-item">
+										<a href="">Latest News</a>
+										<ul class="sub4_menu">
+											<li class="list-img">
+												<div class="img-block">
+													<a href=""><img src="images/img-megamenu1.jpg" alt=""></a>
+												</div>
+												<div class="content-block">
+													<h3 class="title"><a href="pages/campaigns/campaigns-detail.html">Help in Libya</a></h3>
+													<span>1h ago</span>
+												</div>
+											</li>
+											<li class="list-img">
+												<div class="img-block">
+													<a href=""><img src="images/img-megamenu2.jpg" alt=""></a>
+												</div>
+												<div class="content-block">
+													<h3 class="title"><a href="pages/campaigns/campaigns-detail.html">Charity Water</a></h3>
+													<span>January 25, 2016</span>
+												</div>
+											</li>
+											<li class="list-img">
+												<div class="img-block">
+													<a href=""><img src="images/img-megamenu3.jpg" alt=""></a>
+												</div>
+												<div class="content-block">
+													<h3 class="title"><a href="pages/campaigns/campaigns-detail.html">Education for the Childrens</a></h3>
+													<span>January 25, 2016</span>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-item">
+										<a href="">Features News</a>
+										<ul class="sub4_menu">
+											<li>
+												<div class="video-inner">
+													<div class="image">
+														<img src="images/img-megamenu-video.jpg" alt="">
+													</div>
+													<div class="video-body">
+														<a href="https://www.youtube.com/watch?v=4g7zRxRN1Xk" class="popup-video gsc-video-link">
+															<i class="fa icon-play" aria-hidden="true"></i>
+														</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="pages/shop/shop.html">Shop<span id="sub_6" class="icaret nav-plus fa fa-angle-down"></span></a>
+								<ul class="sub_menu sub6">
+									<li><a href="pages/shop/shop.html">Shop No Sitebar</a></li>
+									<li><a href="pages/shop/shop-sitebar-left.html">Shop SiteBar Left</a></li>
+									<li><a href="pages/shop/shop-sitebar-right.html">Shop SiteBar Right</a></li>
+								</ul>
+							</li>
+							
+							<li>
+								<a href="pages/blog/grid-layout.html">Blog<span id="sub_3" class="icaret nav-plus fa fa-angle-down"></span></a>
+								<ul class="sub_menu sub3">
+									<li><a href="pages/blog/grid-layout.html">Grid layout</a></li>
+									<li><a href="pages/blog/list-layout.html">List Layout</a></li>
+									<li><a href="pages/blog/mansory-layout.html">Masonry Layout</a></li>
+									<li><a href="pages/blog/blog-detail.html">Post format</a></li>
+								</ul>
+							</li>
+							<li><a href="pages/about/contact.html">Contact</a></li>
+							<li>
+								<a id="quick-menu"><i class="fa fa-ellipsis-h"></i></a>
+								<ul class="sub_menu sub9">
+									<li class="inputt"><input class="box_search" type="text" name="search"><input class="btn_submit" type="submit" name="sub" value="Search"></li>
+									<li><a href="pages/login/login.html">Login</a></li>
+									<li><a href="pages/login/register.html">Register</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="button_donate">
+							<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="slideshow">
+		<div id="sync10" class="owl-carousel owl-theme">
+		     	<div class="item" style="background-image: url(images/bg_slide.jpg); width: 100%;">
+		       		<div class="container">
+		       			<div class="text_zz">
+		       				<h3>Please help African<br> children make them<br> a better life.</h3>
+		       				<div class="donate">
+								<div class="button_donate">
+									<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+								</div>
+							</div>
+			       		</div>
+		       		</div>
+		     	</div>
+		     	<div class="item" style="background-image: url(images/bg_slide.jpg); width: 100%;">
+		       		<div class="container">
+		       			<div class="text_zz">
+		       				<h3>Please help African<br> children make them<br> a better life.</h3>
+		       				<div class="donate">
+								<div class="button_donate">
+									<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+								</div>
+							</div>
+			       		</div>
+		       		</div>
+		     	</div>
+		</div>
+	</div>
+	<div id="content">
+		<div class="static_donate">
+			<div class="container">
+				<div class="row">
+					<div class="title col-md-7 col-sm-8 col-xs-12">
+						<h3>Make a diffirence in the life of a child</h3>
+						<p>Please help us change lives around the word!</p>
+					</div>
+					<div class="donate col-md-5 col-sm-4 col-xs-12">
+						<div class="button_donate">
+							<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="help">
+			<div class="container">
+				<div class="row">
+					<div class="title">
+						<span>We're helping hand on</span>
+						<h3><b>80.593 Children</b> in <b>125</b> Countries</h3>
+					</div>
+					<div class="left col-md-9">
+				<div class="list-item">
+					<div class="item col-md-6 col-sm-6 col-xs-12">
+						<div class="icon col-md-2">
+							<i class="material-icons">collections_bookmark</i>
+						</div>
+						<div class="text_show col-md-10">
+							<h3>Education</h3>
+							<p>Praesent vestibulum aenean nommy eros hendrerit mauris. Cum sociis natoqueing patibuset mgnis parturient.</p>
+						</div>
+					</div>
+					<div class="item col-md-6 col-sm-6 col-xs-12">
+						<div class="icon col-md-2">
+							<i class="material-icons">local_cafe</i>
+						</div>
+						<div class="text_show col-md-10">
+							<h3>Help $ Support</h3>
+							<p>Praesent vestibulum aenean nommy eros hendrerit mauris. Cum sociis natoqueing patibuset mgnis parturient.</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="item col-md-6 col-sm-6 col-xs-12">
+						<div class="icon col-md-2">
+				 			<i class="material-icons">favorite_border</i>
+						</div>
+						<div class="text_show col-md-10">
+							<h3>Volunteering</h3>
+							<p>Praesent vestibulum aenean nommy eros hendrerit mauris. Cum sociis natoqueing patibuset mgnis parturient.</p>
+						</div>
+					</div>
+					<div class="item col-md-6 col-sm-6 col-xs-12">
+						<div class="icon col-md-2">
+							<i class="material-icons">person_add</i>
+						</div>
+						<div class="text_show col-md-10">
+							<h3>Adoption</h3>
+							<p>Praesent vestibulum aenean nommy eros hendrerit mauris. Cum sociis natoqueing patibuset mgnis parturient.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+					<div class="right col-md-3">
+						<img src="images/img_static_01.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="campaigns">
+			<div class="container">
+				<div class="row">
+					<div class="title">
+						<h3>Latest <b>Campaigns</b></h3>
+					</div>
+					<div id="sync1" class="owl-carousel owl-theme">
+						<div class="item">
+							<div class="z">
+								<div class="img">
+									<div class="img-1">
+										<img src="images/img_01.jpg" alt="">
+									</div>
+									<div class="img-2">
+										<img src="images/62.png" alt="">
+									</div>
+								</div>
+								<div class="ct">
+									<div class="text_show">
+										<h3><a href="pages/campaigns/campaigns-detail.html">Vocational training</a></h3>
+										<p>Maecenas sed diam eget risus varius blandi amet non magna ullamcorper nulaon...</p>
+									</div>
+									<div class="donate">
+										<div class="button_donate">
+											<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+										</div>
+										<p>57 Day left</p>
+									</div>
+									<div class="raised">
+										<p><span>$45,583</span> Raised of <b>$78,324</b> Goal</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="z">
+								<div class="img">
+									<div class="img-1">
+										<img src="images/img_02.jpg" alt="">
+									</div>
+									<div class="img-2">
+										<img src="images/35.png" alt="">
+									</div>
+								</div>
+								<div class="ct">
+									<div class="text_show">
+										<h3><a href="pages/campaigns/campaigns-detail.html">Education for the Children</a></h3>
+										<p>Maecenas sed diam eget risus varius blandi amet non magna ullamcorper nulaon...</p>
+									</div>
+									<div class="donate">
+										<div class="button_donate">
+											<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+										</div>
+										<p>57 Day left</p>
+									</div>
+									<div class="raised">
+										<p><span>$32,583</span> Raised of <b>$4879</b> Goal</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="z">
+								<div class="img">
+									<div class="img-1">
+										<img src="images/img_01.jpg" alt="">
+									</div>
+									<div class="img-2">
+										<img src="images/62.png" alt="">
+									</div>
+								</div>
+								<div class="ct">
+									<div class="text_show">
+										<h3><a href="pages/campaigns/campaigns-detail.html">Vocational training</a></h3>
+										<p>Maecenas sed diam eget risus varius blandi amet non magna ullamcorper nulaon...</p>
+									</div>
+									<div class="donate">
+										<div class="button_donate">
+											<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+										</div>
+										<p>57 Day left</p>
+									</div>
+									<div class="raised">
+										<p><span>$45,583</span> Raised of <b>$78,324</b> Goal</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="z">
+								<div class="img">
+									<div class="img-1">
+										<img src="images/img_03.jpg" alt="">
+									</div>
+									<div class="img-2">
+										<img src="images/86.png" alt="">
+									</div>
+								</div>
+								<div class="ct">
+									<div class="text_show">
+										<h3><a href="pages/campaigns/campaigns-detail.html">Education for the Children</a></h3>
+										<p>Maecenas sed diam eget risus varius blandi amet non magna ullamcorper nulaon...</p>
+									</div>
+									<div class="donate">
+										<div class="button_donate">
+											<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+										</div>
+										<p>57 Day left</p>
+									</div>
+									<div class="raised">
+										<p><span>$45,583</span> Raised of <b>$78,324</b> Goal</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="z">
+								<div class="img">
+									<div class="img-1">
+										<img src="images/img_01.jpg" alt="">
+									</div>
+									<div class="img-2">
+										<img src="images/62.png" alt="">
+									</div>
+								</div>
+								<div class="ct">
+									<div class="text_show">
+										<h3><a href="pages/campaigns/campaigns-detail.html">Education for the Children</a></h3>
+										<p>Maecenas sed diam eget risus varius blandi amet non magna ullamcorper nulaon...</p>
+									</div>
+									<div class="donate">
+										<div class="button_donate">
+											<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+										</div>
+										<p>57 Day left</p>
+									</div>
+									<div class="raised">
+										<p><span>$45,583</span> Raised of <b>$78,324</b> Goal</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="z">
+								<div class="img">
+									<div class="img-1">
+										<img src="images/img_01.jpg" alt="">
+									</div>
+									<div class="img-2">
+										<img src="images/62.png" alt="">
+									</div>
+								</div>
+								<div class="ct">
+									<div class="text_show">
+										<h3><a href="pages/campaigns/campaigns-detail.html">Education for the Children</a></h3>
+										<p>Maecenas sed diam eget risus varius blandi amet non magna ullamcorper nulaon...</p>
+									</div>
+									<div class="donate">
+										<div class="button_donate">
+											<a href="pages/campaigns/campaigns-detail.html">Donate Now</a>
+										</div>
+										<p>57 Day left</p>
+									</div>
+									<div class="raised">
+										<p><span>$45,583</span> Raised of <b>$78,324</b> Goal</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="recent">
+			<div class="container">
+				<div class="row">
+					<div class="title">
+						<h3>Recent <b>New</b> & <b>Video</b></h3>
+					</div>
+					<div class="left col-md-6 col-sm-12 col-xs-12">
+						<img src="images/stories_img_01.jpg" alt="">
+						<a href="#">STORY</a>
+						<p>A girl's father shows charity by helping another girl feel included at a birthday party.</p>
+					</div>
+					<div class="right col-md-6 col-sm-12 col-xs-12">
+						<div class="item col-md-12 col-sm-4 col-xs-12">
+							<div class="row">
+								<div class="img col-md-5">
+									<img src="images/stories_img_02.jpg" alt="">
+								</div>
+								<div class="txt col-md-7">
+									<a href="#">STORY</a>
+									<p>BGEA Chaplains Aim to Share Place, Hope in Midst of Civil Unrest in Milwaukee</p>
+								</div>
+							</div>
+						</div>
+						<div class="item col-md-12 col-sm-4 col-xs-12">
+							<div class="row">
+								<div class="img col-md-5">
+									<img src="images/stories_img_03.jpg" alt="">
+								</div>
+								<div class="txt col-md-7">
+									<a href="#">VIDEO</a>
+									<p>Get a free ride to the Aquarium aboard the MST Trolley</p>
+								</div>
+							</div>
+						</div>
+						<div class="item col-md-12 col-sm-4 col-xs-12">
+							<div class="row">
+								<div class="img col-md-5">
+									<img src="images/stories_img_04.jpg" alt="">
+								</div>
+								<div class="txt col-md-7">
+									<a href="#">STORY</a>
+									<p>Watch! Viggo Mortensen Celebrates 100 years of National Parks</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="join">
+			<div class="container">
+				<div class="row">
+					<div class="text_show col-md-6">
+						<h3>Join Our Campaign</h3>
+						<p>Cystic fibrosis is an inherited chronic disease that affects the lungs and digestive system. A defective gene causes the body to produce unusually thick, sticky mucus that clogs the lungs and leads to life-threatening lung infections. Join us today in supporting abandoned and disabled children.</p>
+						<div class="donate">
+							<div class="button_donate">
+								<a href="pages/campaigns/campaigns-detail.html">Join Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="meet">
+			<div class="container">
+				<div class="row">
+					<div class="title">
+						<h3>Meet Our <b>Volunteers</b></h3>
+					</div>
+					<div id="sync2" class="owl-carousel owl-theme">
+						<div class="item">
+							<div class="img">
+								<img src="images/meet_img_01.jpg" alt="">
+								<div class="social">
+									<span>
+										<a href=""><i class="fa fa-facebook"></i></a><br>
+										<a href=""><i class="fa fa-twitter"></i></a><br>
+										<a href=""><i class="fa fa-dribbble"></i></a><br>
+										<a href=""><i class="fa fa-google-plus"></i></a><br>
+										<a href=""><i class="fa fa-instagram"></i></a>
+									</span>
+								</div>
+							</div>
+							<div class="text_show">
+								<h3><a href="#">Michale Blacksun</a></h3>
+								<p>Duis elentum sapien neque  Habitant morbi trique</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img">
+								<img src="images/meet_img_02.jpg" alt="">
+								<div class="social">
+									<span>
+										<a href=""><i class="fa fa-facebook"></i></a><br>
+										<a href=""><i class="fa fa-twitter"></i></a><br>
+										<a href=""><i class="fa fa-dribbble"></i></a><br>
+										<a href=""><i class="fa fa-google-plus"></i></a><br>
+										<a href=""><i class="fa fa-instagram"></i></a>
+									</span>
+								</div>
+							</div>
+							<div class="text_show">
+								<h3><a href="#">Gareth Sougate</a></h3>
+								<p>Duis elentum sapien neque  Habitant morbi trique</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img">
+								<img src="images/meet_img_01.jpg" alt="">
+								<div class="social">
+									<span>
+										<a href=""><i class="fa fa-facebook"></i></a><br>
+										<a href=""><i class="fa fa-twitter"></i></a><br>
+										<a href=""><i class="fa fa-dribbble"></i></a><br>
+										<a href=""><i class="fa fa-google-plus"></i></a><br>
+										<a href=""><i class="fa fa-instagram"></i></a>
+									</span>
+								</div>
+							</div>
+							<div class="text_show">
+								<h3><a href="#">Michale Blacksun</a></h3>
+								<p>Duis elentum sapien neque  Habitant morbi trique</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img">
+								<img src="images/meet_img_03.jpg" alt="">
+								<div class="social">
+									<span>
+										<a href=""><i class="fa fa-facebook"></i></a><br>
+										<a href=""><i class="fa fa-twitter"></i></a><br>
+										<a href=""><i class="fa fa-dribbble"></i></a><br>
+										<a href=""><i class="fa fa-google-plus"></i></a><br>
+										<a href=""><i class="fa fa-instagram"></i></a>
+									</span>
+								</div>
+							</div>
+							<div class="text_show">
+								<h3><a href="#">Jessica Albalis</a></h3>
+								<p>Duis elentum sapien neque  Habitant morbi trique</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img">
+								<img src="images/meet_img_04.jpg" alt="">
+								<div class="social">
+									<span>
+										<a href=""><i class="fa fa-facebook"></i></a><br>
+										<a href=""><i class="fa fa-twitter"></i></a><br>
+										<a href=""><i class="fa fa-dribbble"></i></a><br>
+										<a href=""><i class="fa fa-google-plus"></i></a><br>
+										<a href=""><i class="fa fa-instagram"></i></a>
+									</span>
+								</div>
+							</div>
+							<div class="text_show">
+								<h3><a href="#">Maria Okazaki</a></h3>
+								<p>Duis elentum sapien neque  Habitant morbi trique</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img">
+								<img src="images/meet_img_05.jpg" alt="">
+								<div class="social">
+									<span>
+										<a href=""><i class="fa fa-facebook"></i></a><br>
+										<a href=""><i class="fa fa-twitter"></i></a><br>
+										<a href=""><i class="fa fa-dribbble"></i></a><br>
+										<a href=""><i class="fa fa-google-plus"></i></a><br>
+										<a href=""><i class="fa fa-instagram"></i></a>
+									</span>
+								</div>
+							</div>
+							<div class="text_show">
+								<h3><a href="#">Tran Tuan Tu</a></h3>
+								<p>Duis elentum sapien neque  Habitant morbi trique</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="people_say">
+			<div class="container">
+				<div class="row">
+					<div class="wrap">
+						<div class="title">
+							<h3>What people <b>Say?</b></h3>
+						</div>
+						<div id="sync4" class="owl-carousel owl-theme">
+							<div class="item">
+								<p><span>"</span> I go to many land, meet many people and know that there are many<br> poor people that need our help. <span>"</span></p>
+								<h4>John Doe</h4>
+								<p class="l">Ceo of MediaLeak - <a href="#">www.medialeak.com</a></p>
+							</div>
+							<div class="item">
+								<p><span>"</span> I go to many land, meet many people and know that there are many<br> poor people that need our help. <span>"</span></p>
+								<h4>John Doe</h4>
+								<p class="l">Ceo of MediaLeak - <a href="#">www.medialeak.com</a></p>
+							</div>
+							<div class="item">
+								<p><span>"</span> I go to many land, meet many people and know that there are many<br> poor people that need our help. <span>"</span></p>
+								<h4>John Doe</h4>
+								<p class="l">Ceo of MediaLeak - <a href="#">www.medialeak.com</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tt_images">
+			<div class="container">
+				<div class="row">
+					<div class="item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="content_block">
+							<span class="zmdi zmdi-favorite-outline" style="color: #ff9800;"></span>
+							<h3 class="i1" style="color: #ff9800;">60,875</h3>
+							<p>Volunteer Helper</p>
+						</div>
+					</div>
+					<div class="item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="content_block">
+							<span class="zmdi zmdi-card-giftcard" style="color: rgb(139, 202, 78);"></span>
+							<h3 class="i2" style="color: rgb(139, 202, 78);">682,345</h3>
+							<p>Donated</p>
+						</div>
+					</div>
+					<div class="item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="content_block">
+							<span class="zmdi zmdi-mood" style="color: #fec501;"></span>
+							<h3 class="i3" style="color: #fec501;">28,374</h3>
+							<p>Happy Children</p>
+						</div>
+					</div>
+					<div class="item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="content_block">
+							<span class="zmdi zmdi-library" style="color: #5586e8;"></span>
+							<h3 class="i4" style="color: #5586e8;">589</h3>
+							<p>Products & Gifts</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="global">
+			<div class="container">
+				<div class="title">
+					<h3>Global <b>Partners</b></h3>
+				</div>
+				<div class="content">
+					<ul id="sync5" class="owl-carousel owl-theme">
+						<li class="item">
+							<div class="bl_image">
+								<img src="images/global_01.png" alt="">
+							</div>
+						</li>
+						<li class="item">
+							<div class="bl_image">
+								<img src="images/global_02.png" alt="">
+							</div>
+						</li>
+						<li class="item">
+							<div class="bl_image">
+								<img src="images/global_03.png" alt="">
+							</div>
+						</li>
+						<li class="item">
+							<div class="bl_image">
+								<img src="images/global_04.png" alt="">
+							</div>
+						</li>
+						<li class="item">
+							<div class="bl_image">
+								<img src="images/global_05.png" alt="">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="instagram">
+			<div class="container">
+				<div class="row">
+					<div class="title">
+						<h3>Follow us on Instagram <a href="#">@CharityPlus</a></h3>
+					</div>
+					<div class="content">
+						<ul id="sync6" class="owl-carousel owl-theme">
+							<li class="item">
+								<img src="images/i_img1.jpg" alt="">
+							</li>
+							<li class="item">
+								<img src="images/i_img2.jpg" alt="">
+							</li>
+							<li class="item">
+								<img src="images/i_img3.jpg" alt="">
+							</li>
+							<li class="item">
+								<img src="images/i_img4.jpg" alt="">
+							</li>
+							<li class="item">
+								<img src="images/i_img5.jpg" alt="">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ready">
+			<div class="container">
+				<div class="left col-md-6 col-sm-12 col-xs-12">
+					<h3>Are you ready to volunteer?</h3>
+				</div>
+				<div class="right col-md-6 col-sm-12 col-xs-12">
+					<div class="b">
+						<div class="button_donate btn-1"">
+							<a href="#">Become a Volunteer</a>
+						</div>
+						<div class="button_donate btn-2">
+							<a href="#">Make a Donation</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">	
+			<div class="row">
+				<div class="footer-1">
+					<div class="item col-md-3">
+						<div class="title">
+							<h3>Useful Links</h3>
+						</div>
+						<ul class="us1">
+							<li><a href="#">Donation History</a></li>
+							<li><a href="#">Our Mission</a></li>
+							<li><a href="#">Donation Histoty</a></li>
+							<li><a href="#">Our Leadership</a></li>
+							<li><a href="#">Public Reporting</a></li>
+							<li><a href="#">Media Library</a></li>
+							<li><a href="#">Sign in</a></li>
+						</ul>
+					</div>
+					<div class="item1 col-md-3">
+						<div class="title">
+							<h3>Newsletter Signup</h3>
+						</div>
+						<p>dolor sit amet consetetur sacing elitre diam tempor invidunt</p>
+						<input type="text" name="mail" placeholder="Your email address...">
+						<div class="donate">
+							<div class="button_donate">
+								<a href="pages/campaign/campaign-detail.html">Subscrible</a>
+							</div>
+						</div>
+					</div>
+					<div class="item2 col-md-3">
+						<div class="title">
+							<h3>Latest Tweet</h3>
+						</div>
+						<p class="p1"><b>@WordPress :</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitre<br> <a href="#">http://t.co/B0aO4FrqN0</a><br> 18 hours ago</p>
+						<p class="p2"><b>@WordPress :</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitre<br> <a href="#">http://t.co/B0aO4FrqN0</a><br> 18 hours ago</p>
+					</div>
+					<div class="item3 col-md-3">
+						<div class="title">
+							<a><img src="images/logo_footer.png" alt=""></a>
+						</div>
+						<div class="pz">
+							<p>Lorem ipsum dolor sit amet conseteturop sapscing elitre sed diam eimod tempores einvidunt labore voluptua dolores.</p>
+						</div>
+						<div class="email email1">
+							<p><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact@Charitys.com</p>
+						</div>
+						<div class="email email2">
+							<p><i class="fa fa-phone" aria-hidden="true"></i>(305) 123 456 789 - 888</p>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="social">
+						<div class="social1">
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
+							<a href=""><i class="fa fa-dribbble"></i></a>
+							<a href=""><i class="fa fa-google-plus"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
+					<div class="oxy">
+						<a href="#">My Charities</a>
+						<a href="#">Terms of Use</a>
+						<a href="#">Privacy Policy</a>
+						<a href="#">Site Map</a>
+						<a href="#">About Us</a>
+						<a href="#">Contact Us</a>
+					</div>
+					<div class="cpr">
+						<p><span>CharityPlus</span> by <span>SpyroPress</span>. All right Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		(function($){
+			$('#setting').on('click',function(e){
+				e.preventDefault();
+				$('.menu').slideToggle('slow');
+			});
+			$('#close').on('click',function(e){
+				e.preventDefault();
+				$('.menu').slideToggle('slow');
+			});
+			$('#sub_1').on('click',function(e){
+				e.preventDefault();
+				$('.sub1').slideToggle('slow');
+			});
+			$('#sub_2').on('click',function(e){
+				e.preventDefault();
+				$('.sub2').slideToggle('slow');
+			});
+			$('#sub_3').on('click',function(e){
+				e.preventDefault();
+				$('.sub3').slideToggle('slow');
+			});
+			$('#sub_4').on('click',function(e){
+				e.preventDefault();
+				$('.sub4').slideToggle('slow');
+			});
+			$('#sub_5').on('click',function(e){
+				e.preventDefault();
+				$('.sub5').slideToggle('slow');
+			});
+			$('#sub_6').on('click',function(e){
+				e.preventDefault();
+				$('.sub6').slideToggle('slow');
+			});
+			$('#quick-menu').on('click',function(e){
+				e.preventDefault();
+				$('.sub9').slideToggle('linear');
+			});
+			$(window).resize(function(){
+				if($(window).width()>1200){
+					$('.menu').css('display','block');
+				}
+				if($(window).width()<1200){
+					$('.menu').css('display','none');
+				}
+			});
+		})(jQuery);
+	</script>
+</body>
+</html>
