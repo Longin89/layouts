@@ -13,37 +13,42 @@ function toFade(buttOn, buttOff1, buttOff2, painting, authors, titles, descs, pr
     priceField[i].classList.add('invise');
   }
 
-  setTimeout(() => {
-    paintingField.forEach((picture, l) => picture.src = painting[l]);
-    authorField.forEach((auths, i) => auths.innerHTML = authors[i]);
-    titleField.forEach((title, j) => title.innerHTML = titles[j]);
-    descField.forEach((desc, k) => desc.innerHTML = descs[k]);
-    priceField.forEach((price, m) => price.innerHTML = prices[m]);
-  }, 850);
 
+  const updateFieldsAndLoadImagesPromise = new Promise(resolve => {
+    setTimeout(() => {
+      paintingField.forEach((picture, l) => {
+        picture.onload = () => {
 
+          picture.classList.remove('invise');
+        };
+        picture.src = painting[l];
+      });
 
-    setTimeout(() => {         
-      for(let i = 0; i < authorField.length; i++) {
-        paintingField[i].onload = paintingField[i].classList.remove('invise');
-        authorField[i].classList.remove('invise');
-        titleField[i].classList.remove('invise');
-        descField[i].classList.remove('invise');
-        priceField[i].classList.remove('invise');
-      }
-}, 850)
+      // Обновляем содержимое полей
+      authorField.forEach((auths, i) => auths.innerHTML = authors[i]);
+      titleField.forEach((title, j) => title.innerHTML = titles[j]);
+      descField.forEach((desc, k) => desc.innerHTML = descs[k]);
+      priceField.forEach((price, m) => price.innerHTML = prices[m]);
 
+      resolve();
+    }, 1000);
+  });
 
+  updateFieldsAndLoadImagesPromise.then(() => {
+    for(let i = 0; i < authorField.length; i++) {
+      authorField[i].classList.remove('invise');
+      titleField[i].classList.remove('invise');
+      descField[i].classList.remove('invise');
+      priceField[i].classList.remove('invise');
+    }
 
-  setTimeout(() => {
-        for(let i = 0; i < authorField.length; i++) {
-          paintingField[i].onload = paintingField[i].classList.add('fade');
-          authorField[i].classList.add('fade');
-          titleField[i].classList.add('fade');
-          descField[i].classList.add('fade');
-          priceField[i].classList.add('fade');
-        }
-  }, 850)
+    for(let i = 0; i < authorField.length; i++) {
+      authorField[i].classList.add('fade');
+      titleField[i].classList.add('fade');
+      descField[i].classList.add('fade');
+      priceField[i].classList.add('fade');
+    }
+  });
 }
 
   //EVENTS FOR BUTTONS

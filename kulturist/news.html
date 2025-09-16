@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="./fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/TheCrewPro.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/Lordcorps.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/HandveticaNeue.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <script defer src="js/main.bundle.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=31830af7-45e9-48ad-9f63-c4d696b5808f&lang=ru"></script>
+  <title>СК Культурист</title>
+</head>
+
+
+<body class="page__body">
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__container container">
+            <div class="header__logo">
+                <svg width="81" height="30" viewBox="0 0 81 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M59.1928 16.9942L59.2915 16.9493H59.3999H59.4163C59.5795 16.8923 59.6994 16.8441 59.818 16.7632L63.4813 14.2613L47.6999 14.2613C47.3071 14.2613 46.9505 14.1496 46.6797 13.9514C46.4145 13.7574 46.1999 13.4509 46.1999 13.0784C46.1999 12.6466 46.4669 12.3381 46.7437 12.1616C47.0212 11.9847 47.3669 11.8954 47.6999 11.8954L58.8999 11.8954C63.3443 11.8954 67.547 10.881 70.9356 9.0026L47.6999 9.0026C47.3071 9.0026 46.9505 8.89087 46.6797 8.69269C46.4145 8.49865 46.1999 8.19221 46.1999 7.81965C46.1999 7.38785 46.4669 7.07933 46.7437 6.90288C47.0212 6.726 47.3669 6.63669 47.6999 6.63669L66.4999 6.63669C70.9443 6.63669 75.147 5.62227 78.5356 3.74387L46.6999 3.74387C45.2732 3.74387 43.9144 3.40167 42.8221 2.80304C42.3245 2.53033 41.8749 2.19992 41.4999 1.81865L41.4999 25.2467L46.1999 28.5129V26.2594C46.1999 23.7668 47.6174 21.5655 49.8183 19.9646C52.0137 18.3676 55.0243 17.3358 58.3451 17.1564C58.4437 17.1401 58.5352 17.1277 58.6174 17.1168C58.6317 17.115 58.6456 17.1131 58.6591 17.1114C58.7338 17.1016 58.7976 17.0932 58.8596 17.0834C59.0019 17.061 59.1016 17.0357 59.1928 16.9942Z"
+                        fill="white" stroke="#FF7846" />
+                    <path
+                        d="M21.1072 16.8919L21.0085 16.847H20.9H20.8837C20.7204 16.79 20.6005 16.7418 20.482 16.6609L16.8187 14.159L32.6 14.159C32.9928 14.159 33.3494 14.0473 33.6203 13.8491C33.8854 13.6551 34.1 13.3487 34.1 12.9761C34.1 12.5443 33.8331 12.2358 33.5562 12.0593C33.2787 11.8824 32.933 11.7931 32.6 11.7931L21.4 11.7931C16.9556 11.7931 12.7529 10.7787 9.36433 8.9003L32.6 8.9003C32.9928 8.9003 33.3494 8.78858 33.6203 8.59039C33.8854 8.39635 34.1 8.08991 34.1 7.71735C34.1 7.28555 33.8331 6.97704 33.5562 6.80058C33.2787 6.6237 32.933 6.5344 32.6 6.5344L13.8 6.5344C9.35558 6.5344 5.15293 5.51997 1.76433 3.64157L33.6 3.64157C35.0267 3.64157 36.3855 3.29937 37.4778 2.70075C37.9754 2.42804 38.425 2.09762 38.8 1.71636L38.8 25.1444L34.1 28.4106V26.1571C34.1 23.6645 32.6825 21.4632 30.4816 19.8623C28.2862 18.2653 25.2757 17.2335 21.9549 17.0541C21.8562 17.0378 21.7647 17.0254 21.6825 17.0145C21.6682 17.0127 21.6543 17.0108 21.6408 17.0091C21.5662 16.9993 21.5023 16.9909 21.4403 16.9811C21.298 16.9587 21.1983 16.9334 21.1072 16.8919Z"
+                        fill="white" stroke="#FF7846" />
+                </svg>
+                <a href="index.html" class="header__logo-link">
+                    FRCGYM
+                </a>
+            </div>
+            <nav class="header__nav">
+                <div class="header__nav-burger burger-button">
+                    <span class="header__burger-line burger-top"></span>
+                    <span class="header__burger-line burger-middle"></span>
+                    <span class="header__burger-line burger-bottom"></span>
+                </div>
+                <ul class="header__burger-list burger-menu">
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="prices.html">Цены</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="schedule.html">Расписание занятий</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="header__burger-item">
+                        <a class="header__burger-link" href="about.html">О клубе</a>
+                    </li>
+                </ul>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="prices.html" class="header__nav-link">
+                            Цены
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="schedule.html" class="header__nav-link">
+                            Расписание занятий
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="news.html" class="header__nav-link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contacts.html" class="header__nav-link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">
+                            О клубе
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="header__contacts">
+                <li class="header__contacts-item">
+                    <a href="tel:+73473439773" class="header__contacts-link" target="_blank" title="Позвонить">
+                        <img src="images/phone.webp" alt="phone">
+                    </a>
+                </li>
+                <li class="header__contacts-item">
+                    <a href="https://vk.com/kulturiststr" class="header__contacts-link" target="_blank"
+                        title="ВКонтакте">
+                        <img src="images/vk.webp" alt="vk">
+                    </a>
+                </li>
+                <li class="header__contacts-item">
+                    <a href="https://wa.me/79173495679" class="header__contacts-link" target="_blank" title="WhatsApp">
+                        <img src="images/whatsapp.webp" alt="whatsapp">
+                    </a>
+                </li>
+                <li class="header__contacts-item">
+                    <a href="mailto:444celena@mail.ru" class="header__contacts-link" target="_blank" title="Email">
+                        <img src="images/email.webp" alt="email">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <section class="news">
+                <div class="news__container container">
+                    <h1 class="news__title">
+                        Здесь будет блок с новостями
+                    </h1>
+                    <img src="images/about.webp" alt="about">
+                    <p class="news__subtitle">
+                        Являясь общественной организацией, спортивный клуб «Культурист» с 1988 года проводит
+                        социально-педагогическую и досуговую работу с детьми и подростками по месту жительства с
+                        организацией занятий по национальным и народным видам спорта.
+                        За эти годы клубом подготовлены 1 мастер спорта международного класса, 10 мастеров спорта
+                        России, десятки кандидатов в мастера спорта, десятки спортсменов
+                        I разряда. Воспитанники клуба неоднократно становились чемпионами и призерами республиканских и
+                        всероссийских соревнований по гиревому спорту и армспорту. Спортивный клуб «Культурист» во
+                        взаимодействии с Минспортом Республики Башкортостан и комитетом по физической культуре, спорту и туризму города
+                        Стерлитамак проводит большую работу по организации спортивных мероприятий и пропаганде здорового
+                        образа жизни среди учащейся молодежи общеобразовательных школ, училищ, техникумов и ВУЗов.
+                        В настоящее время в клубе занимаются свыше 300 подростков и молодежи со всех районов города от
+                        12 до 20 лет, в том числе и дети от 6 до 14 лет.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__nav">
+      <h2 class="footer__nav-title">
+        Разделы сайта
+      </h2>
+      <ul class="footer__nav-list">
+        <li class="footer__list-item">
+          <a href="index.html" class="footer__item-link">
+            Главная
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="prices.html" class="footer__item-link">
+            Цены
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="schedule.html" class="footer__item-link">
+            Расписание занятий
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="news.html" class="footer__item-link">
+            Новости
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="contacts.html" class="footer__item-link">
+            Контакты
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="about.html" class="footer__item-link">
+            О клубе
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__contacts">
+      <h2 class="footer__contacts-title">
+        Связаться с нами
+      </h2>
+      <ul class="footer__contacts-list">
+        <li class="footer__list-item">
+          <a href="tel:+73473439773" class="footer__contacts-link" target="_blank" title="Позвонить">
+            <img src="images/phone.webp" alt="phone">
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="https://vk.com/kulturiststr" class="footer__contacts-link" target="_blank" title="ВКонтакте">
+            <img src="images/vk.webp" alt="vk">
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="https://wa.me/79173495679" class="footer__contacts-link" target="_blank" title="WhatsApp">
+            <img src="images/whatsapp.webp" alt="whatsapp">
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="mailto:444celena@mail.ru" class="footer__contacts-link" target="_blank" title="Email">
+            <img src="images/email.webp" alt="email">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__worktime">
+      <h2 class="footer__worktime-title">
+        Режим работы
+      </h2>
+      <ul class="footer__worktime-list">
+        <li class="footer__worktime-item">
+          Пн. - чт.: 08:00 - 22:00
+        </li>
+        <li class="footer__worktime-item">
+          Пт.: 07:00 - 20:00
+        </li>
+        <li class="footer__worktime-item">
+          Сб.: 14:00 - 20:00
+        </li>
+        <li class="footer__worktime-item">
+          Вс.: выходной
+        </li>
+      </ul>
+    </div>
+    <div class="footer__address">
+      <h2 class="footer__address-title">
+        Как нас найти
+      </h2>
+      <ul class="footer__address-list">
+        <li class="footer__address-item">
+          Республика Башкортостан
+        </li>
+        <li class="footer__address-item">
+          г. Стерлитамак
+        </li>
+        <li class="footer__address-item">
+          Ул. Дружбы 3, цокольный этаж
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    </div>
+</body>
+
+</html>
