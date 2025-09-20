@@ -1098,9 +1098,6 @@ h5,
   color: #fff;
 }
 
-.site-section {
-  padding: 3rem 0;
-}
 @media (max-width: 991.98px) {
   .site-section {
     padding: 3rem 0;
@@ -2268,9 +2265,6 @@ h5,
 .feature-29192-wrap .text .meta {
   color: #fff;
 }
-.feature-29192:hover {
-  filter: drop-shadow(2px 4px 6px gray);
-}
 
 .heading-20219 .subtitle {
   color: #00a651;
@@ -2306,7 +2300,7 @@ h5,
   position: relative;
 }
 .cause h3 {
-  font-size: 26px !important;
+  font-size: 1.5rem !important;
 }
 .cause h3 a {
   color: #000;
@@ -2385,4 +2379,8 @@ h5,
   background-color: #fff;
   color: #000 !important;
   padding: 8px 0;
+}
+
+.section-title {
+  padding-top: 5em;
 }
